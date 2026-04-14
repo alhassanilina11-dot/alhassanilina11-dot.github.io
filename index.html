@@ -1,168 +1,898 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>HAIR CS Dortmund</title>
-
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>HAIR CS Dortmund | Premium Friseursalon</title>
+<meta name="description" content="HAIR CS Dortmund – Premium Friseursalon für Balayage, Blond, Coloration, Haarschnitt und Styling in Dortmund." />
 <style>
+:root{
+--bg:#f4f0ea;
+--bg-soft:#efebe4;
+--card:#f8f5f0;
+--white:#fffdf9;
+--text:#232335;
+--muted:#7d8193;
+--gold:#c9a04d;
+--gold-dark:#b68a34;
+--line:#dfd7cb;
+--dark:#191927;
+--shadow:0 18px 50px rgba(27,26,35,0.08);
+--radius:28px;
+--max:1180px;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
 body{
 margin:0;
-font-family: 'Georgia', serif;
-background:#f7f3ee;
-color:#2d2d2d;
+font-family: "Georgia", "Times New Roman", serif;
+color:var(--text);
+background:var(--bg);
+line-height:1.5;
 }
 
-header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 30px;
-background:#f7f3ee;
-}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
 
-.logo{
-font-size:28px;
-letter-spacing:2px;
-}
-
-.logo span{
-color:#caa25a;
-}
-
-.hero{
-height:90vh;
-background:url("dein-bild.jpg") center/cover;
-display:flex;
-align-items:center;
-padding:40px;
-color:white;
-}
-
-.hero-box{
-max-width:600px;
-}
-
-.hero h1{
-font-size:48px;
-line-height:1.2;
-}
-
-.hero p{
-font-size:18px;
-margin-top:15px;
-}
-
-.btn{
-display:inline-block;
-margin-top:25px;
-padding:15px 30px;
-background:#caa25a;
-color:white;
-border-radius:30px;
-text-decoration:none;
+.container{
+width:min(calc(100% - 32px), var(--max));
+margin:0 auto;
 }
 
 .section{
-padding:80px 20px;
-text-align:center;
+padding:100px 0;
 }
 
-.section h2{
-font-size:36px;
-margin-bottom:40px;
+.eyebrow{
+display:inline-block;
+color:var(--gold);
+font-family: Arial, sans-serif;
+letter-spacing:.14em;
+font-size:14px;
+font-weight:700;
+text-transform:uppercase;
+margin-bottom:18px;
 }
 
-.grid{
+.title{
+font-size:clamp(38px,6vw,74px);
+line-height:1.05;
+margin:0 0 18px;
+letter-spacing:-0.03em;
+font-weight:500;
+}
+
+.subtitle{
+font-family: Arial, sans-serif;
+color:var(--muted);
+font-size:20px;
+max-width:760px;
+line-height:1.65;
+margin:0;
+}
+
+.site-header{
+position:sticky;
+top:0;
+z-index:40;
+background:rgba(244,240,234,0.92);
+backdrop-filter:blur(12px);
+border-bottom:1px solid rgba(223,215,203,0.9);
+}
+
+.nav{
+min-height:88px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:20px;
+}
+
+.brand{
+font-size:28px;
+letter-spacing:.06em;
+font-weight:500;
+}
+
+.brand span{
+color:var(--gold);
+}
+
+.nav-links{
+display:flex;
+gap:26px;
+align-items:center;
+font-family:Arial, sans-serif;
+color:var(--text);
+}
+
+.nav-links a{
+color:#3f4150;
+font-size:15px;
+font-weight:600;
+}
+
+.btn{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+gap:10px;
+min-height:56px;
+padding:0 28px;
+border-radius:999px;
+font-family:Arial, sans-serif;
+font-size:17px;
+font-weight:700;
+border:1px solid transparent;
+transition:.2s ease;
+cursor:pointer;
+}
+
+.btn:hover{
+transform:translateY(-1px);
+}
+
+.btn-gold{
+background:var(--gold);
+color:white;
+box-shadow:0 14px 30px rgba(201,160,77,.22);
+}
+
+.btn-gold:hover{
+background:var(--gold-dark);
+}
+
+.btn-light{
+background:transparent;
+border-color:var(--gold);
+color:var(--gold-dark);
+}
+
+.hero{
+padding:34px 0 46px;
+}
+
+.hero-card{
+min-height:840px;
+border-radius:34px;
+overflow:hidden;
+position:relative;
+background:
+linear-gradient(90deg, rgba(25,25,39,.74) 0%, rgba(25,25,39,.50) 36%, rgba(25,25,39,.12) 75%),
+url("hero.jpg") center center / cover no-repeat;
+box-shadow:var(--shadow);
+display:flex;
+align-items:center;
+}
+
+.hero-content{
+padding:80px 70px;
+max-width:760px;
+color:white;
+}
+
+.hero-rating{
+font-family:Arial, sans-serif;
+font-size:16px;
+color:#f5f1ea;
+margin-bottom:26px;
+}
+
+.stars{
+color:var(--gold);
+letter-spacing:.12em;
+font-size:20px;
+margin-right:8px;
+}
+
+.hero h1{
+color:white;
+font-size:clamp(44px,6vw,82px);
+line-height:1.05;
+margin:0 0 22px;
+letter-spacing:-0.04em;
+font-weight:500;
+}
+
+.hero p{
+font-family:Arial, sans-serif;
+color:rgba(255,255,255,.85);
+font-size:22px;
+line-height:1.7;
+margin:0 0 34px;
+max-width:700px;
+}
+
+.hero-actions{
+display:flex;
+flex-wrap:wrap;
+gap:14px;
+}
+
+.stats{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:30px;
-max-width:1000px;
-margin:auto;
+grid-template-columns:repeat(4,1fr);
+gap:18px;
+margin-top:30px;
 }
 
-.card{
-background:white;
-padding:30px;
-border-radius:20px;
-border:1px solid #eee;
+.stat{
+background:rgba(255,253,249,.55);
+border:1px solid rgba(255,255,255,.28);
+border-radius:24px;
+padding:26px 20px;
+text-align:center;
+box-shadow:var(--shadow);
 }
 
-.card h3{
+.stat-icon{
+color:var(--gold);
+font-size:28px;
 margin-bottom:10px;
 }
 
-.footer{
-padding:40px;
-text-align:center;
-background:#2d2d2d;
+.stat strong{
+display:block;
+font-size:34px;
+margin-bottom:4px;
+font-weight:500;
+}
+
+.stat span{
+display:block;
+font-family:Arial, sans-serif;
+color:var(--muted);
+font-size:15px;
+line-height:1.45;
+}
+
+.services-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:26px;
+margin-top:44px;
+}
+
+.service-card{
+background:var(--card);
+border:1px solid var(--line);
+border-radius:28px;
+padding:38px;
+box-shadow:var(--shadow);
+}
+
+.service-icon{
+width:68px;
+height:68px;
+border-radius:50%;
+display:grid;
+place-items:center;
+background:#f1e8d9;
+color:var(--gold);
+font-size:30px;
+margin-bottom:26px;
+}
+
+.service-card h3{
+margin:0 0 16px;
+font-size:28px;
+font-weight:500;
+}
+
+.service-card p{
+margin:0;
+font-family:Arial, sans-serif;
+color:var(--muted);
+font-size:19px;
+line-height:1.7;
+}
+
+.why-wrap{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:start;
+margin-top:40px;
+}
+
+.why-list{
+display:grid;
+gap:30px;
+}
+
+.why-item{
+display:grid;
+grid-template-columns:100px 1fr;
+gap:24px;
+align-items:start;
+}
+
+.why-badge{
+width:96px;
+height:96px;
+border-radius:50%;
+background:#f3eadc;
+color:var(--gold);
+display:grid;
+place-items:center;
+font-size:38px;
+}
+
+.why-item h3{
+margin:0 0 10px;
+font-size:30px;
+font-weight:500;
+}
+
+.why-item p{
+margin:0;
+font-family:Arial, sans-serif;
+color:var(--muted);
+font-size:20px;
+line-height:1.75;
+}
+
+.image-card{
+background:var(--white);
+border:1px solid var(--line);
+border-radius:32px;
+overflow:hidden;
+box-shadow:var(--shadow);
+}
+
+.image-card img{
+width:100%;
+height:100%;
+object-fit:cover;
+min-height:720px;
+}
+
+.gallery-grid{
+display:grid;
+grid-template-columns:1.2fr .8fr;
+gap:24px;
+margin-top:46px;
+}
+
+.gallery-grid img{
+border-radius:28px;
+border:1px solid var(--line);
+box-shadow:var(--shadow);
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.gallery-right{
+display:grid;
+gap:24px;
+}
+
+.gallery-large{
+min-height:620px;
+}
+
+.gallery-small{
+min-height:298px;
+}
+
+.review-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:26px;
+margin-top:44px;
+}
+
+.review-card{
+background:var(--card);
+border:1px solid var(--line);
+border-radius:28px;
+padding:38px;
+box-shadow:var(--shadow);
+}
+
+.review-card .stars{
+display:block;
+margin-bottom:24px;
+font-size:22px;
+}
+
+.review-card p{
+margin:0 0 28px;
+font-family:Arial, sans-serif;
+color:var(--muted);
+font-size:20px;
+line-height:1.8;
+font-style:italic;
+}
+
+.review-card strong{
+display:block;
+font-size:22px;
+font-weight:700;
+font-family:Arial, sans-serif;
+color:var(--text);
+}
+
+.review-card span{
+font-family:Arial, sans-serif;
+color:var(--muted);
+font-size:16px;
+}
+
+.contact-box{
+margin-top:44px;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:26px;
+}
+
+.contact-card{
+background:var(--card);
+border:1px solid var(--line);
+border-radius:28px;
+padding:38px;
+box-shadow:var(--shadow);
+}
+
+.contact-card h3{
+margin:0 0 20px;
+font-size:30px;
+font-weight:500;
+}
+
+.contact-row{
+display:flex;
+gap:14px;
+margin-bottom:20px;
+font-family:Arial, sans-serif;
+color:var(--muted);
+font-size:19px;
+line-height:1.7;
+}
+
+.contact-row strong{
+color:var(--text);
+font-weight:700;
+}
+
+.hours-list{
+list-style:none;
+padding:0;
+margin:0;
+font-family:Arial, sans-serif;
+}
+
+.hours-list li{
+display:flex;
+justify-content:space-between;
+gap:18px;
+padding:13px 0;
+border-bottom:1px solid var(--line);
+color:var(--muted);
+font-size:18px;
+}
+
+.hours-list li strong{
+color:var(--text);
+}
+
+.legal-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:26px;
+margin-top:44px;
+}
+
+.legal-card{
+background:var(--card);
+border:1px solid var(--line);
+border-radius:28px;
+padding:38px;
+box-shadow:var(--shadow);
+}
+
+.legal-card h3{
+margin:0 0 18px;
+font-size:30px;
+font-weight:500;
+}
+
+.legal-card p,
+.legal-card li{
+margin:0 0 14px;
+font-family:Arial, sans-serif;
+color:var(--muted);
+font-size:17px;
+line-height:1.75;
+}
+
+.legal-card ul{
+padding-left:20px;
+margin:0;
+}
+
+.site-footer{
+margin-top:70px;
+padding:36px 0;
+background:var(--dark);
+color:#f5efe5;
+}
+
+.footer-wrap{
+display:flex;
+justify-content:space-between;
+gap:20px;
+align-items:center;
+flex-wrap:wrap;
+}
+
+.footer-links{
+display:flex;
+gap:18px;
+flex-wrap:wrap;
+font-family:Arial, sans-serif;
+font-size:14px;
+}
+
+.footer-links a{
+color:#e5d9c5;
+}
+
+.floating-call{
+position:fixed;
+right:24px;
+bottom:24px;
+z-index:50;
+min-height:62px;
+padding:0 28px;
+border-radius:999px;
+background:var(--gold);
 color:white;
+font-family:Arial, sans-serif;
+font-size:18px;
+font-weight:700;
+display:flex;
+align-items:center;
+gap:12px;
+box-shadow:0 18px 40px rgba(201,160,77,.35);
+}
+
+@media (max-width: 980px){
+.nav-links{display:none}
+.hero-card{min-height:720px}
+.hero-content{padding:44px 28px}
+.stats,
+.services-grid,
+.why-wrap,
+.gallery-grid,
+.review-grid,
+.contact-box,
+.legal-grid{
+grid-template-columns:1fr;
+}
+.image-card img{min-height:420px}
+.why-item{
+grid-template-columns:72px 1fr;
+}
+.why-badge{
+width:72px;height:72px;font-size:28px;
+}
+.section{padding:78px 0}
+.floating-call{
+right:16px;
+left:16px;
+justify-content:center;
+}
 }
 </style>
 </head>
-
 <body>
 
-<header>
-<div class="logo">HAIR <span>CS</span></div>
-<div>☰</div>
+<header class="site-header">
+<div class="container nav">
+<a class="brand" href="#top">HAIR <span>CS</span></a>
+<nav class="nav-links">
+<a href="#leistungen">Leistungen</a>
+<a href="#warum">Warum wir</a>
+<a href="#salon">Salon</a>
+<a href="#bewertungen">Bewertungen</a>
+<a href="#kontakt">Kontakt</a>
+<a href="#impressum">Impressum</a>
+</nav>
+<a class="btn btn-gold" href="tel:023128676166">Jetzt anrufen</a>
+</div>
 </header>
 
-<section class="hero">
-<div class="hero-box">
-⭐⭐⭐⭐⭐ 4,8 Sterne · 280+ Kunden
-<h1>Balayage, Blond & Coloration – Ihr Spezialist</h1>
-<p>Seit über 10 Jahren vertrauen uns Kunden in Dortmund.</p>
-<a href="tel:023128676166" class="btn">Jetzt anrufen</a>
+<main id="top">
+<section class="hero container">
+<div class="hero-card">
+<div class="hero-content">
+<div class="hero-rating">
+<span class="stars">★★★★★</span>
+4,8 Sterne · 280+ zufriedene Kunden
+</div>
+<h1>Balayage, Blond &amp; Coloration – Ihr Spezialist in Dortmund</h1>
+<p>
+Seit über 10 Jahren vertrauen uns Kundinnen und Kunden in Dortmund.
+Für Farbe, Schnitt und Styling, das wirklich elegant, modern und hochwertig wirkt.
+</p>
+<div class="hero-actions">
+<a class="btn btn-gold" href="tel:023128676166">Jetzt anrufen</a>
+<a class="btn btn-light" href="#leistungen">Leistungen ansehen</a>
+</div>
+</div>
+</div>
+
+<div class="stats">
+<div class="stat">
+<div class="stat-icon">★</div>
+<strong>4,8</strong>
+<span>Google Bewertung</span>
+</div>
+<div class="stat">
+<div class="stat-icon">👥</div>
+<strong>280+</strong>
+<span>Zufriedene Kunden</span>
+</div>
+<div class="stat">
+<div class="stat-icon">🏅</div>
+<strong>10+</strong>
+<span>Jahre in Dortmund</span>
+</div>
+<div class="stat">
+<div class="stat-icon">✦</div>
+<strong>Kérastase</strong>
+<span>Premium-Produkte</span>
+</div>
 </div>
 </section>
 
-<section class="section">
-<h2>Unsere Leistungen</h2>
-<div class="grid">
-<div class="card">
+<section class="section" id="leistungen">
+<div class="container">
+<div class="eyebrow">Unsere Leistungen</div>
+<h2 class="title">Worauf unsere Kunden in Dortmund vertrauen</h2>
+<p class="subtitle">
+Hochwertige Farbtechniken, präzise Schnitte und Styling mit einem klaren Premium-Anspruch.
+Elegant umgesetzt und individuell auf Typ, Haarstruktur und Wunsch abgestimmt.
+</p>
+
+<div class="services-grid">
+<article class="service-card">
+<div class="service-icon">🖌</div>
 <h3>Balayage</h3>
-<p>Natürliche Farbverläufe perfekt abgestimmt.</p>
-</div>
-<div class="card">
-<h3>Blond & Coloration</h3>
-<p>Strahlende Ergebnisse ohne Kompromisse.</p>
-</div>
-<div class="card">
+<p>Natürliche, sonnengeküsste Farbverläufe, die monatelang schön nachwachsen und weich, luxuriös und individuell wirken.</p>
+</article>
+
+<article class="service-card">
+<div class="service-icon">✧</div>
+<h3>Blond &amp; Coloration</h3>
+<p>Von Honigblond bis Platinblond: strahlende, saubere Ergebnisse ohne Kompromisse bei Glanz und Haargesundheit.</p>
+</article>
+
+<article class="service-card">
+<div class="service-icon">✂</div>
 <h3>Haarschnitt</h3>
-<p>Präzise und typgerecht für Damen & Herren.</p>
-</div>
-<div class="card">
-<h3>Styling</h3>
-<p>Perfekter Look für jeden Anlass.</p>
+<p>Präzise Schnitte, die Ihre Gesichtsform und Ihren Stil perfekt betonen – klassisch, modern und hochwertig.</p>
+</article>
+
+<article class="service-card">
+<div class="service-icon">༄</div>
+<h3>Styling &amp; Blow-out</h3>
+<p>Perfektes Styling für Alltag, Event oder besonderen Anlass – mit Bewegung, Volumen und elegantem Finish.</p>
+</article>
+
+<article class="service-card">
+<div class="service-icon">◌</div>
+<h3>Dauerwelle &amp; Locken</h3>
+<p>Natürliches Volumen und definierte Bewegung mit moderner Technik und einem Ergebnis, das weich und tragbar wirkt.</p>
+</article>
+
+<article class="service-card">
+<div class="service-icon">🧴</div>
+<h3>Pflege &amp; Beratung</h3>
+<p>Ehrliche Beratung statt leerer Versprechen – inklusive Produktempfehlung für gesundes, glänzendes Haar auch nach dem Termin.</p>
+</article>
 </div>
 </div>
 </section>
 
-<section class="section">
-<h2>Kundenstimmen</h2>
-<div class="grid">
-<div class="card">
-⭐⭐⭐⭐⭐
-<p>„Bester Friseur in Dortmund!“</p>
+<section class="section" id="warum">
+<div class="container">
+<div class="eyebrow">Warum Hair CS?</div>
+<h2 class="title">Ihr Friseur in Dortmund – seit über 10 Jahren</h2>
+<p class="subtitle">
+Unsere Stärke ist nicht nur das Ergebnis, sondern das gesamte Gefühl:
+Beratung, Atmosphäre, Präzision und ehrliche Empfehlung.
+</p>
+
+<div class="why-wrap">
+<div class="why-list">
+<div class="why-item">
+<div class="why-badge">◎</div>
+<div>
+<h3>Über 10 Jahre Erfahrung</h3>
+<p>Tausende zufriedene Kunden – vom einfachen Schnitt bis zur anspruchsvollen Blond- und Balayage-Technik.</p>
 </div>
-<div class="card">
-⭐⭐⭐⭐⭐
-<p>„Sehr professionell und freundlich.“</p>
+</div>
+
+<div class="why-item">
+<div class="why-badge">🎨</div>
+<div>
+<h3>Blond- &amp; Color-Spezialist</h3>
+<p>Unsere Kernkompetenz: klares Blond, elegante Übergänge und lebendige Farben, die lange schön aussehen.</p>
+</div>
+</div>
+
+<div class="why-item">
+<div class="why-badge">◇</div>
+<div>
+<h3>Kérastase-Produkte</h3>
+<p>Wir arbeiten mit hochwertigen Premium-Produkten für Schutz, Pflege und sichtbaren Glanz nach jedem Termin.</p>
+</div>
+</div>
+
+<div class="why-item">
+<div class="why-badge">♡</div>
+<div>
+<h3>Persönlich &amp; ehrlich</h3>
+<p>Ehrliche Beratung statt Überredung. Wir empfehlen nur, was wirklich zu Haar, Wunsch und Alltag passt.</p>
+</div>
+</div>
+</div>
+
+<div class="image-card">
+<img src="salon1.jpg" alt="Innenbereich von HAIR CS Dortmund">
+</div>
 </div>
 </div>
 </section>
 
-<section class="section">
-<h2>Kontakt</h2>
-<p>📍 Am Knappenberg 36, Dortmund</p>
-<p>📞 0231 28676166</p>
+<section class="section" id="salon">
+<div class="container">
+<div class="eyebrow">Unser Salon</div>
+<h2 class="title">Einblick in unser Studio</h2>
+<p class="subtitle">
+Ein heller, gepflegter Raum mit stilvoller Atmosphäre – modern, ruhig und hochwertig.
+</p>
+
+<div class="gallery-grid">
+<img class="gallery-large" src="salon2.jpg" alt="Salonansicht HAIR CS Dortmund">
+<div class="gallery-right">
+<img class="gallery-small" src="salon3.jpg" alt="Styling-Bereich im Salon">
+<img class="gallery-small" src="salon4.jpg" alt="Produkte und Interior von HAIR CS Dortmund">
+</div>
+</div>
+</div>
 </section>
 
-<div class="footer">
-© HAIR CS Dortmund
+<section class="section" id="bewertungen">
+<div class="container">
+<div class="eyebrow">Kundenstimmen</div>
+<h2 class="title">Über 280 zufriedene Kunden – das sagen sie</h2>
+<p class="subtitle">
+Gute Bewertungen verkaufen nicht nur Vertrauen, sondern auch Qualität, Klarheit und Professionalität.
+</p>
+
+<div class="review-grid">
+<article class="review-card">
+<span class="stars">★★★★★</span>
+<p>„Can ist ein absoluter Macher in seinem Handwerk. Besonders Blond bekommt er genauso hin, wie man es sich wünscht – präzise, typgerecht und mit richtig viel Fachwissen.“</p>
+<strong>Sabrina</strong>
+<span>Google Bewertung</span>
+</article>
+
+<article class="review-card">
+<span class="stars">★★★★★</span>
+<p>„Schon beim Ankommen wird man herzlich begrüßt. Auf meine Wünsche wurde sehr gut eingegangen und ich wurde ehrlich und ausführlich beraten. Man fühlt sich sofort wohl.“</p>
+<strong>Iela Kaya</strong>
+<span>Google Bewertung</span>
+</article>
+
+<article class="review-card">
+<span class="stars">★★★★★</span>
+<p>„Endlich ein Friseur, der wirklich zuhört. Mein Balayage sieht natürlich und gepflegt aus – sogar nach Wochen noch. Komme definitiv wieder.“</p>
+<strong>Sarah K.</strong>
+<span>Google Bewertung</span>
+</article>
+
+<article class="review-card">
+<span class="stars">★★★★★</span>
+<p>„Ehrliche Beratung, tolles Ergebnis. Ich wurde nicht zu etwas überredet, sondern perfekt beraten. Der beste Friseur in Dortmund.“</p>
+<strong>Lisa T.</strong>
+<span>Google Bewertung</span>
+</article>
 </div>
+</div>
+</section>
+
+<section class="section" id="kontakt">
+<div class="container">
+<div class="eyebrow">Kontakt</div>
+<h2 class="title">Besuchen Sie uns in Dortmund</h2>
+<p class="subtitle">
+Für Terminvereinbarungen empfehlen wir den direkten Anruf. Schnell, einfach und persönlich.
+</p>
+
+<div class="contact-box">
+<div class="contact-card">
+<h3>Kontakt &amp; Adresse</h3>
+<div class="contact-row"><strong>Salon:</strong>&nbsp; HAIR CS Dortmund</div>
+<div class="contact-row"><strong>Adresse:</strong>&nbsp; Am Knappenberg 36, 44139 Dortmund</div>
+<div class="contact-row"><strong>Telefon:</strong>&nbsp; <a href="tel:023128676166">0231 28676166</a></div>
+<div class="contact-row"><strong>Hinweise:</strong>&nbsp; WLAN vorhanden · WC vorhanden · kinderfreundlich · Terminvereinbarung empfohlen</div>
+<div style="margin-top:28px;">
+<a class="btn btn-gold" href="tel:023128676166">Jetzt anrufen</a>
+</div>
+</div>
+
+<div class="contact-card">
+<h3>Öffnungszeiten</h3>
+<ul class="hours-list">
+<li><span>Dienstag</span><strong>10:00–18:00</strong></li>
+<li><span>Mittwoch</span><strong>10:00–18:00</strong></li>
+<li><span>Donnerstag</span><strong>10:00–18:00</strong></li>
+<li><span>Freitag</span><strong>10:00–18:00</strong></li>
+<li><span>Samstag</span><strong>10:00–14:00</strong></li>
+<li><span>Sonntag</span><strong>Geschlossen</strong></li>
+<li><span>Montag</span><strong>Geschlossen</strong></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section" id="impressum">
+<div class="container">
+<div class="eyebrow">Rechtliches</div>
+<h2 class="title">Impressum &amp; Datenschutz</h2>
+<p class="subtitle">
+Diese Bereiche dürfen auf einer geschäftlichen Website nicht fehlen.
+</p>
+
+<div class="legal-grid">
+<div class="legal-card">
+<h3>Impressum</h3>
+<p><strong>HAIR CS Dortmund</strong></p>
+<p>Am Knappenberg 36<br>44139 Dortmund</p>
+<p>Telefon: 0231 28676166</p>
+<p><strong>Wichtig:</strong> Hier musst du noch den vollständigen Namen der verantwortlichen Person / Inhaberin / des Inhabers ergänzen.</p>
+<p>Beispiel:</p>
+<p>Inhaber: Max Mustermann</p>
+<p>Falls vorhanden, später auch USt-IdNr. ergänzen.</p>
+</div>
+
+<div class="legal-card">
+<h3>Datenschutzerklärung</h3>
+<p>Diese Website ist als einfache Präsentationsseite aufgebaut und verwendet aktuell keine Analyse- oder Marketing-Tools.</p>
+<ul>
+<li>Keine Tracking-Tools</li>
+<li>Keine Marketing-Cookies</li>
+<li>Keine eingebettete Karte</li>
+<li>Keine externe Terminsoftware</li>
+</ul>
+<p>Beim Hosting können technisch notwendige Server-Logdaten verarbeitet werden.</p>
+<p>Wenn du später Google Maps, Meta Pixel, Analytics, YouTube oder Buchungssysteme einbaust, muss dieser Text erweitert werden.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer class="site-footer">
+<div class="container footer-wrap">
+<div>© HAIR CS Dortmund</div>
+<div class="footer-links">
+<a href="#leistungen">Leistungen</a>
+<a href="#bewertungen">Bewertungen</a>
+<a href="#kontakt">Kontakt</a>
+<a href="#impressum">Impressum</a>
+</div>
+</div>
+</footer>
+
+<a class="floating-call" href="tel:023128676166">📞 Jetzt anrufen</a>
 
 </body>
 </html>
