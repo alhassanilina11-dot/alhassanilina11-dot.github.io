@@ -4,31 +4,33 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>HAIR CS Dortmund | Premium Friseursalon</title>
-<meta name="description" content="HAIR CS Dortmund – Premium Friseursalon für Balayage, Blond, Coloration, Haarschnitt und Styling in Dortmund." />
+<meta name="description" content="HAIR CS Dortmund – Premium Friseursalon für Balayage, Blond, Coloration, Haarschnitt, Styling und Terminbuchung in Dortmund." />
 <style>
 :root{
---bg:#f4f0ea;
---bg-soft:#efebe4;
---card:#f8f5f0;
---white:#fffdf9;
---text:#232335;
---muted:#7d8193;
---gold:#c9a04d;
---gold-dark:#b68a34;
---line:#dfd7cb;
---dark:#191927;
---shadow:0 18px 50px rgba(27,26,35,0.08);
---radius:28px;
---max:1180px;
+--bg:#f7f2eb;
+--bg-2:#f3ede4;
+--card:#fffaf4;
+--white:#ffffff;
+--text:#2a2430;
+--muted:#7b7380;
+--gold:#c8a15a;
+--gold-dark:#b68b43;
+--rose:#eadfd6;
+--line:#e7ddd1;
+--shadow:0 20px 60px rgba(55, 39, 24, 0.08);
+--radius:30px;
+--max:1200px;
 }
 
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{
 margin:0;
-font-family: "Georgia", "Times New Roman", serif;
+font-family:"Georgia","Times New Roman",serif;
+background:
+radial-gradient(circle at top right, rgba(200,161,90,0.08), transparent 18%),
+linear-gradient(180deg, var(--bg) 0%, #f9f5ef 100%);
 color:var(--text);
-background:var(--bg);
 line-height:1.5;
 }
 
@@ -41,48 +43,48 @@ margin:0 auto;
 }
 
 .section{
-padding:100px 0;
+padding:110px 0;
 }
 
 .eyebrow{
 display:inline-block;
-color:var(--gold);
-font-family: Arial, sans-serif;
+font-family:Arial, sans-serif;
+text-transform:uppercase;
 letter-spacing:.14em;
 font-size:14px;
 font-weight:700;
-text-transform:uppercase;
+color:var(--gold);
 margin-bottom:18px;
 }
 
 .title{
-font-size:clamp(38px,6vw,74px);
-line-height:1.05;
 margin:0 0 18px;
-letter-spacing:-0.03em;
+font-size:clamp(42px, 6vw, 84px);
+line-height:1.03;
+letter-spacing:-0.04em;
 font-weight:500;
 }
 
 .subtitle{
-font-family: Arial, sans-serif;
+margin:0;
+max-width:760px;
+font-family:Arial, sans-serif;
 color:var(--muted);
 font-size:20px;
-max-width:760px;
-line-height:1.65;
-margin:0;
+line-height:1.75;
 }
 
 .site-header{
 position:sticky;
 top:0;
-z-index:40;
-background:rgba(244,240,234,0.92);
-backdrop-filter:blur(12px);
-border-bottom:1px solid rgba(223,215,203,0.9);
+z-index:60;
+background:rgba(247,242,235,0.9);
+backdrop-filter:blur(14px);
+border-bottom:1px solid rgba(231,221,209,0.85);
 }
 
 .nav{
-min-height:88px;
+min-height:92px;
 display:flex;
 align-items:center;
 justify-content:space-between;
@@ -101,16 +103,15 @@ color:var(--gold);
 
 .nav-links{
 display:flex;
-gap:26px;
 align-items:center;
+gap:28px;
 font-family:Arial, sans-serif;
-color:var(--text);
 }
 
 .nav-links a{
-color:#3f4150;
 font-size:15px;
-font-weight:600;
+color:#453f49;
+font-weight:700;
 }
 
 .btn{
@@ -118,48 +119,42 @@ display:inline-flex;
 align-items:center;
 justify-content:center;
 gap:10px;
-min-height:56px;
+min-height:58px;
 padding:0 28px;
 border-radius:999px;
 font-family:Arial, sans-serif;
 font-size:17px;
 font-weight:700;
 border:1px solid transparent;
-transition:.2s ease;
 cursor:pointer;
+transition:.2s ease;
 }
 
-.btn:hover{
-transform:translateY(-1px);
-}
+.btn:hover{transform:translateY(-1px)}
 
 .btn-gold{
-background:var(--gold);
+background:linear-gradient(135deg, var(--gold), var(--gold-dark));
 color:white;
-box-shadow:0 14px 30px rgba(201,160,77,.22);
+box-shadow:0 18px 35px rgba(200,161,90,0.22);
 }
 
-.btn-gold:hover{
-background:var(--gold-dark);
-}
-
-.btn-light{
-background:transparent;
+.btn-outline{
 border-color:var(--gold);
 color:var(--gold-dark);
+background:rgba(255,255,255,0.35);
 }
 
 .hero{
-padding:34px 0 46px;
+padding:34px 0 32px;
 }
 
 .hero-card{
-min-height:840px;
-border-radius:34px;
+min-height:860px;
+border-radius:38px;
 overflow:hidden;
 position:relative;
 background:
-linear-gradient(90deg, rgba(25,25,39,.74) 0%, rgba(25,25,39,.50) 36%, rgba(25,25,39,.12) 75%),
+linear-gradient(90deg, rgba(34,25,31,.70) 0%, rgba(34,25,31,.48) 38%, rgba(34,25,31,.12) 76%),
 url("hero.jpg") center center / cover no-repeat;
 box-shadow:var(--shadow);
 display:flex;
@@ -167,76 +162,77 @@ align-items:center;
 }
 
 .hero-content{
-padding:80px 70px;
 max-width:760px;
+padding:82px 68px;
 color:white;
 }
 
 .hero-rating{
 font-family:Arial, sans-serif;
+color:rgba(255,255,255,.88);
 font-size:16px;
-color:#f5f1ea;
-margin-bottom:26px;
+margin-bottom:24px;
 }
 
 .stars{
 color:var(--gold);
-letter-spacing:.12em;
+letter-spacing:.14em;
+margin-right:10px;
 font-size:20px;
-margin-right:8px;
 }
 
 .hero h1{
-color:white;
-font-size:clamp(44px,6vw,82px);
-line-height:1.05;
 margin:0 0 22px;
-letter-spacing:-0.04em;
+color:white;
+font-size:clamp(46px, 7vw, 88px);
+line-height:1.02;
+letter-spacing:-0.05em;
 font-weight:500;
+max-width:720px;
 }
 
 .hero p{
-font-family:Arial, sans-serif;
-color:rgba(255,255,255,.85);
-font-size:22px;
-line-height:1.7;
 margin:0 0 34px;
 max-width:700px;
+font-family:Arial, sans-serif;
+color:rgba(255,255,255,.86);
+font-size:22px;
+line-height:1.75;
 }
 
 .hero-actions{
 display:flex;
-flex-wrap:wrap;
 gap:14px;
+flex-wrap:wrap;
 }
 
 .stats{
 display:grid;
 grid-template-columns:repeat(4,1fr);
 gap:18px;
-margin-top:30px;
+margin-top:26px;
 }
 
 .stat{
-background:rgba(255,253,249,.55);
-border:1px solid rgba(255,255,255,.28);
-border-radius:24px;
-padding:26px 20px;
+background:rgba(255,250,244,.72);
+border:1px solid rgba(255,255,255,.55);
+border-radius:26px;
+padding:28px 20px;
 text-align:center;
 box-shadow:var(--shadow);
 }
 
 .stat-icon{
+font-size:26px;
 color:var(--gold);
-font-size:28px;
 margin-bottom:10px;
 }
 
 .stat strong{
 display:block;
 font-size:34px;
-margin-bottom:4px;
 font-weight:500;
+margin-bottom:4px;
 }
 
 .stat span{
@@ -244,39 +240,42 @@ display:block;
 font-family:Arial, sans-serif;
 color:var(--muted);
 font-size:15px;
-line-height:1.45;
+line-height:1.5;
 }
 
 .services-grid{
 display:grid;
 grid-template-columns:repeat(2,1fr);
 gap:26px;
-margin-top:44px;
+margin-top:46px;
 }
 
-.service-card{
-background:var(--card);
+.card{
+background:linear-gradient(180deg, rgba(255,250,244,0.96) 0%, rgba(255,255,255,0.96) 100%);
 border:1px solid var(--line);
-border-radius:28px;
-padding:38px;
+border-radius:30px;
 box-shadow:var(--shadow);
 }
 
+.service-card{
+padding:40px;
+}
+
 .service-icon{
-width:68px;
-height:68px;
+width:74px;
+height:74px;
 border-radius:50%;
 display:grid;
 place-items:center;
-background:#f1e8d9;
+background:#f5ebde;
 color:var(--gold);
 font-size:30px;
-margin-bottom:26px;
+margin-bottom:24px;
 }
 
 .service-card h3{
 margin:0 0 16px;
-font-size:28px;
+font-size:30px;
 font-weight:500;
 }
 
@@ -284,16 +283,85 @@ font-weight:500;
 margin:0;
 font-family:Arial, sans-serif;
 color:var(--muted);
-font-size:19px;
-line-height:1.7;
+font-size:20px;
+line-height:1.75;
 }
 
-.why-wrap{
+.booking-grid{
 display:grid;
 grid-template-columns:1fr 1fr;
-gap:50px;
+gap:26px;
+margin-top:46px;
+}
+
+.booking-card{
+padding:40px;
+}
+
+.booking-card h3{
+margin:0 0 18px;
+font-size:32px;
+font-weight:500;
+}
+
+.booking-list{
+margin:0;
+padding-left:18px;
+font-family:Arial, sans-serif;
+color:var(--muted);
+font-size:18px;
+line-height:1.9;
+}
+
+.booking-form{
+display:grid;
+gap:16px;
+margin-top:8px;
+}
+
+.booking-form label{
+display:grid;
+gap:8px;
+font-family:Arial, sans-serif;
+font-size:15px;
+font-weight:700;
+color:#4a434d;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea{
+width:100%;
+min-height:56px;
+border-radius:18px;
+border:1px solid var(--line);
+background:#fffdf9;
+padding:14px 16px;
+font-family:Arial, sans-serif;
+font-size:16px;
+color:var(--text);
+outline:none;
+}
+
+.booking-form textarea{
+min-height:130px;
+resize:vertical;
+}
+
+.booking-note{
+font-family:Arial, sans-serif;
+color:var(--muted);
+font-size:14px;
+line-height:1.7;
+margin-top:10px;
+}
+
+.about-wrap{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:46px;
 align-items:start;
-margin-top:40px;
+margin-top:44px;
 }
 
 .why-list{
@@ -303,25 +371,25 @@ gap:30px;
 
 .why-item{
 display:grid;
-grid-template-columns:100px 1fr;
+grid-template-columns:94px 1fr;
 gap:24px;
 align-items:start;
 }
 
 .why-badge{
-width:96px;
-height:96px;
+width:94px;
+height:94px;
 border-radius:50%;
-background:#f3eadc;
-color:var(--gold);
 display:grid;
 place-items:center;
-font-size:38px;
+background:#f6ede0;
+color:var(--gold);
+font-size:36px;
 }
 
 .why-item h3{
 margin:0 0 10px;
-font-size:30px;
+font-size:31px;
 font-weight:500;
 }
 
@@ -333,86 +401,83 @@ font-size:20px;
 line-height:1.75;
 }
 
-.image-card{
-background:var(--white);
-border:1px solid var(--line);
-border-radius:32px;
+.about-image{
 overflow:hidden;
-box-shadow:var(--shadow);
+min-height:760px;
 }
 
-.image-card img{
+.about-image img{
 width:100%;
 height:100%;
+min-height:760px;
 object-fit:cover;
-min-height:720px;
+border-radius:30px;
 }
 
 .gallery-grid{
 display:grid;
 grid-template-columns:1.2fr .8fr;
 gap:24px;
-margin-top:46px;
+margin-top:44px;
 }
 
-.gallery-grid img{
-border-radius:28px;
+.gallery-main,
+.gallery-side img{
+border-radius:30px;
 border:1px solid var(--line);
 box-shadow:var(--shadow);
-width:100%;
-height:100%;
 object-fit:cover;
+width:100%;
 }
 
-.gallery-right{
+.gallery-main{
+min-height:640px;
+height:100%;
+}
+
+.gallery-side{
 display:grid;
 gap:24px;
 }
 
-.gallery-large{
-min-height:620px;
-}
-
-.gallery-small{
-min-height:298px;
+.gallery-side img{
+min-height:308px;
+height:100%;
 }
 
 .review-grid{
 display:grid;
 grid-template-columns:1fr 1fr;
 gap:26px;
-margin-top:44px;
+margin-top:46px;
 }
 
 .review-card{
-background:var(--card);
-border:1px solid var(--line);
-border-radius:28px;
 padding:38px;
-box-shadow:var(--shadow);
 }
 
 .review-card .stars{
 display:block;
 margin-bottom:24px;
-font-size:22px;
+color:#7f8791;
+letter-spacing:.10em;
 }
 
 .review-card p{
-margin:0 0 28px;
+margin:0 0 26px;
 font-family:Arial, sans-serif;
-color:var(--muted);
-font-size:20px;
-line-height:1.8;
+color:#6f7682;
+font-size:21px;
+line-height:1.9;
 font-style:italic;
 }
 
 .review-card strong{
 display:block;
-font-size:22px;
-font-weight:700;
 font-family:Arial, sans-serif;
+font-size:20px;
 color:var(--text);
+margin-bottom:6px;
 }
 
 .review-card span{
@@ -421,40 +486,37 @@ color:var(--muted);
 font-size:16px;
 }
 
-.contact-box{
-margin-top:44px;
+.contact-grid{
 display:grid;
 grid-template-columns:1fr 1fr;
 gap:26px;
+margin-top:46px;
 }
 
 .contact-card{
-background:var(--card);
-border:1px solid var(--line);
-border-radius:28px;
-padding:38px;
-box-shadow:var(--shadow);
+padding:40px;
 }
 
 .contact-card h3{
-margin:0 0 20px;
-font-size:30px;
+margin:0 0 22px;
+font-size:32px;
 font-weight:500;
 }
 
 .contact-row{
+margin-bottom:18px;
 display:flex;
-gap:14px;
-margin-bottom:20px;
+gap:12px;
 font-family:Arial, sans-serif;
-color:var(--muted);
 font-size:19px;
+color:var(--muted);
 line-height:1.7;
 }
 
 .contact-row strong{
 color:var(--text);
 font-weight:700;
+min-width:110px;
 }
 
 .hours-list{
@@ -468,7 +530,7 @@ font-family:Arial, sans-serif;
 display:flex;
 justify-content:space-between;
 gap:18px;
-padding:13px 0;
+padding:14px 0;
 border-bottom:1px solid var(--line);
 color:var(--muted);
 font-size:18px;
@@ -482,20 +544,16 @@ color:var(--text);
 display:grid;
 grid-template-columns:1fr 1fr;
 gap:26px;
-margin-top:44px;
+margin-top:46px;
 }
 
 .legal-card{
-background:var(--card);
-border:1px solid var(--line);
-border-radius:28px;
-padding:38px;
-box-shadow:var(--shadow);
+padding:40px;
 }
 
 .legal-card h3{
 margin:0 0 18px;
-font-size:30px;
+font-size:32px;
 font-weight:500;
 }
 
@@ -505,84 +563,90 @@ margin:0 0 14px;
 font-family:Arial, sans-serif;
 color:var(--muted);
 font-size:17px;
-line-height:1.75;
+line-height:1.8;
 }
 
 .legal-card ul{
-padding-left:20px;
 margin:0;
+padding-left:20px;
 }
 
-.site-footer{
+.footer{
 margin-top:70px;
-padding:36px 0;
-background:var(--dark);
-color:#f5efe5;
+padding:34px 0;
+background:#211b21;
+color:#f2e7d6;
 }
 
 .footer-wrap{
 display:flex;
+align-items:center;
 justify-content:space-between;
 gap:20px;
-align-items:center;
 flex-wrap:wrap;
 }
 
 .footer-links{
 display:flex;
-gap:18px;
 flex-wrap:wrap;
+gap:18px;
 font-family:Arial, sans-serif;
 font-size:14px;
 }
 
 .footer-links a{
-color:#e5d9c5;
+color:#e7d6bf;
 }
 
 .floating-call{
 position:fixed;
-right:24px;
-bottom:24px;
-z-index:50;
-min-height:62px;
-padding:0 28px;
-border-radius:999px;
-background:var(--gold);
-color:white;
-font-family:Arial, sans-serif;
-font-size:18px;
-font-weight:700;
+right:22px;
+bottom:22px;
+z-index:55;
 display:flex;
 align-items:center;
-gap:12px;
-box-shadow:0 18px 40px rgba(201,160,77,.35);
+gap:10px;
+min-height:60px;
+padding:0 26px;
+border-radius:999px;
+background:linear-gradient(135deg, var(--gold), var(--gold-dark));
+color:white;
+font-family:Arial, sans-serif;
+font-size:17px;
+font-weight:700;
+box-shadow:0 18px 40px rgba(200,161,90,0.28);
 }
 
 @media (max-width: 980px){
 .nav-links{display:none}
-.hero-card{min-height:720px}
-.hero-content{padding:44px 28px}
+.hero-card{min-height:740px}
+.hero-content{padding:44px 26px}
 .stats,
 .services-grid,
-.why-wrap,
+.booking-grid,
+.about-wrap,
 .gallery-grid,
 .review-grid,
-.contact-box,
+.contact-grid,
 .legal-grid{
 grid-template-columns:1fr;
 }
-.image-card img{min-height:420px}
+.about-image,
+.about-image img{
+min-height:420px;
+}
 .why-item{
-grid-template-columns:72px 1fr;
+grid-template-columns:74px 1fr;
 }
 .why-badge{
-width:72px;height:72px;font-size:28px;
+width:74px;
+height:74px;
+font-size:28px;
 }
-.section{padding:78px 0}
+.section{padding:80px 0}
 .floating-call{
-right:16px;
 left:16px;
+right:16px;
 justify-content:center;
 }
 }
@@ -593,15 +657,18 @@ justify-content:center;
 <header class="site-header">
 <div class="container nav">
 <a class="brand" href="#top">HAIR <span>CS</span></a>
+
 <nav class="nav-links">
 <a href="#leistungen">Leistungen</a>
+<a href="#buchung">Buchung</a>
 <a href="#warum">Warum wir</a>
 <a href="#salon">Salon</a>
 <a href="#bewertungen">Bewertungen</a>
 <a href="#kontakt">Kontakt</a>
 <a href="#impressum">Impressum</a>
 </nav>
-<a class="btn btn-gold" href="tel:023128676166">Jetzt anrufen</a>
+
+<a class="btn btn-gold" href="#buchung">Termin buchen</a>
 </div>
 </header>
 
@@ -613,14 +680,17 @@ justify-content:center;
 <span class="stars">★★★★★</span>
 4,8 Sterne · 280+ zufriedene Kunden
 </div>
-<h1>Balayage, Blond &amp; Coloration – Ihr Spezialist in Dortmund</h1>
+
+<h1>Balayage, Blond &amp; Coloration – Ihr stilvoller Salon in Dortmund</h1>
+
 <p>
-Seit über 10 Jahren vertrauen uns Kundinnen und Kunden in Dortmund.
-Für Farbe, Schnitt und Styling, das wirklich elegant, modern und hochwertig wirkt.
+Für moderne Looks, weiche Farbverläufe, präzise Schnitte und ein
+Ergebnis, das elegant, feminin und hochwertig wirkt.
 </p>
+
 <div class="hero-actions">
-<a class="btn btn-gold" href="tel:023128676166">Jetzt anrufen</a>
-<a class="btn btn-light" href="#leistungen">Leistungen ansehen</a>
+<a class="btn btn-gold" href="#buchung">Termin buchen</a>
+<a class="btn btn-outline" href="#leistungen">Leistungen ansehen</a>
 </div>
 </div>
 </div>
@@ -652,48 +722,129 @@ Für Farbe, Schnitt und Styling, das wirklich elegant, modern und hochwertig wir
 <section class="section" id="leistungen">
 <div class="container">
 <div class="eyebrow">Unsere Leistungen</div>
-<h2 class="title">Worauf unsere Kunden in Dortmund vertrauen</h2>
+<h2 class="title">Worauf unsere Kundinnen in Dortmund vertrauen</h2>
 <p class="subtitle">
-Hochwertige Farbtechniken, präzise Schnitte und Styling mit einem klaren Premium-Anspruch.
-Elegant umgesetzt und individuell auf Typ, Haarstruktur und Wunsch abgestimmt.
+Hochwertige Farbtechniken, moderne Schnitte und liebevoll abgestimmtes Styling
+mit einem klaren Premium-Gefühl.
 </p>
 
 <div class="services-grid">
-<article class="service-card">
+<article class="card service-card">
 <div class="service-icon">🖌</div>
 <h3>Balayage</h3>
-<p>Natürliche, sonnengeküsste Farbverläufe, die monatelang schön nachwachsen und weich, luxuriös und individuell wirken.</p>
+<p>Natürliche, sonnengeküsste Farbverläufe, die weich, luxuriös und monatelang schön wirken.</p>
 </article>
 
-<article class="service-card">
+<article class="card service-card">
 <div class="service-icon">✧</div>
 <h3>Blond &amp; Coloration</h3>
-<p>Von Honigblond bis Platinblond: strahlende, saubere Ergebnisse ohne Kompromisse bei Glanz und Haargesundheit.</p>
+<p>Von Honigblond bis Platinblond: strahlende, saubere Ergebnisse mit Glanz und Eleganz.</p>
 </article>
 
-<article class="service-card">
+<article class="card service-card">
 <div class="service-icon">✂</div>
 <h3>Haarschnitt</h3>
-<p>Präzise Schnitte, die Ihre Gesichtsform und Ihren Stil perfekt betonen – klassisch, modern und hochwertig.</p>
+<p>Präzise Schnitte, die Ihre Gesichtsform und Ihren Stil perfekt betonen – modern und hochwertig.</p>
 </article>
 
-<article class="service-card">
+<article class="card service-card">
 <div class="service-icon">༄</div>
 <h3>Styling &amp; Blow-out</h3>
-<p>Perfektes Styling für Alltag, Event oder besonderen Anlass – mit Bewegung, Volumen und elegantem Finish.</p>
+<p>Perfektes Styling mit Bewegung, Volumen und elegantem Finish für Alltag, Event oder besondere Anlässe.</p>
 </article>
 
-<article class="service-card">
+<article class="card service-card">
 <div class="service-icon">◌</div>
 <h3>Dauerwelle &amp; Locken</h3>
-<p>Natürliches Volumen und definierte Bewegung mit moderner Technik und einem Ergebnis, das weich und tragbar wirkt.</p>
+<p>Natürliches Volumen und definierte Bewegung mit moderner Technik und einem weichen, tragbaren Ergebnis.</p>
 </article>
 
-<article class="service-card">
+<article class="card service-card">
 <div class="service-icon">🧴</div>
 <h3>Pflege &amp; Beratung</h3>
-<p>Ehrliche Beratung statt leerer Versprechen – inklusive Produktempfehlung für gesundes, glänzendes Haar auch nach dem Termin.</p>
+<p>Ehrliche Beratung und passende Produktempfehlungen für gesundes, glänzendes Haar auch nach dem Termin.</p>
 </article>
+</div>
+</div>
+</section>
+
+<section class="section" id="buchung">
+<div class="container">
+<div class="eyebrow">Online Terminbuchung</div>
+<h2 class="title">Termin direkt online anfragen</h2>
+<p class="subtitle">
+Kunden können ihren Wunschtermin einfach online anfragen. Die Anfrage wird dann per E-Mail vorbereitet.
+</p>
+
+<div class="booking-grid">
+<div class="card booking-card">
+<h3>So funktioniert es</h3>
+<ul class="booking-list">
+<li>Leistung auswählen</li>
+<li>Wunschdatum und Uhrzeit eintragen</li>
+<li>Kontaktdaten angeben</li>
+<li>Termin-Anfrage senden</li>
+</ul>
+<p class="booking-note">
+Hinweis: Diese Version erstellt eine professionelle Termin-Anfrage per E-Mail.
+Für automatische Kalenderbuchung mit festen freien Zeiten brauchst du später zusätzlich ein externes Buchungssystem.
+</p>
+</div>
+
+<div class="card booking-card">
+<h3>Termin anfragen</h3>
+
+<form class="booking-form" id="bookingForm">
+<label>
+Vorname & Nachname
+<input type="text" id="name" placeholder="Ihr Name" required>
+</label>
+
+<label>
+Telefonnummer
+<input type="tel" id="phone" placeholder="Ihre Telefonnummer" required>
+</label>
+
+<label>
+E-Mail
+<input type="email" id="email" placeholder="Ihre E-Mail-Adresse" required>
+</label>
+
+<label>
+Gewünschte Leistung
+<select id="service" required>
+<option value="">Bitte auswählen</option>
+<option>Balayage</option>
+<option>Blond & Coloration</option>
+<option>Haarschnitt</option>
+<option>Styling & Blow-out</option>
+<option>Dauerwelle & Locken</option>
+<option>Pflege & Beratung</option>
+</select>
+</label>
+
+<label>
+Wunschdatum
+<input type="date" id="date" required>
+</label>
+
+<label>
+Wunschuhrzeit
+<input type="time" id="time" required>
+</label>
+
+<label>
+Nachricht
+<textarea id="message" placeholder="Zusätzliche Wünsche oder Hinweise"></textarea>
+</label>
+
+<button type="submit" class="btn btn-gold">Anfrage senden</button>
+</form>
+
+<p class="booking-note">
+Beim Klick auf „Anfrage senden“ öffnet sich das E-Mail-Programm mit der fertigen Anfrage.
+</p>
+</div>
 </div>
 </div>
 </section>
@@ -707,13 +858,13 @@ Unsere Stärke ist nicht nur das Ergebnis, sondern das gesamte Gefühl:
 Beratung, Atmosphäre, Präzision und ehrliche Empfehlung.
 </p>
 
-<div class="why-wrap">
+<div class="about-wrap">
 <div class="why-list">
 <div class="why-item">
 <div class="why-badge">◎</div>
 <div>
 <h3>Über 10 Jahre Erfahrung</h3>
-<p>Tausende zufriedene Kunden – vom einfachen Schnitt bis zur anspruchsvollen Blond- und Balayage-Technik.</p>
+<p>Tausende zufriedene Kunden – vom klassischen Schnitt bis zur anspruchsvollen Blond- und Balayage-Technik.</p>
 </div>
 </div>
 
@@ -742,8 +893,8 @@ Beratung, Atmosphäre, Präzision und ehrliche Empfehlung.
 </div>
 </div>
 
-<div class="image-card">
-<img src="salon1.jpg" alt="Innenbereich von HAIR CS Dortmund">
+<div class="card about-image">
+<img src="salon1.jpg" alt="Innenansicht des HAIR CS Dortmund Salons">
 </div>
 </div>
 </div>
@@ -758,10 +909,10 @@ Ein heller, gepflegter Raum mit stilvoller Atmosphäre – modern, ruhig und hoc
 </p>
 
 <div class="gallery-grid">
-<img class="gallery-large" src="salon2.jpg" alt="Salonansicht HAIR CS Dortmund">
-<div class="gallery-right">
-<img class="gallery-small" src="salon3.jpg" alt="Styling-Bereich im Salon">
-<img class="gallery-small" src="salon4.jpg" alt="Produkte und Interior von HAIR CS Dortmund">
+<img class="gallery-main" src="salon2.jpg" alt="Außenansicht oder Hauptansicht des Salons">
+<div class="gallery-side">
+<img src="salon3.jpg" alt="Einrichtung und Styling-Bereich im Salon">
+<img src="salon4.jpg" alt="Produkte und Interior von HAIR CS Dortmund">
 </div>
 </div>
 </div>
@@ -776,28 +927,28 @@ Gute Bewertungen verkaufen nicht nur Vertrauen, sondern auch Qualität, Klarheit
 </p>
 
 <div class="review-grid">
-<article class="review-card">
+<article class="card review-card">
 <span class="stars">★★★★★</span>
 <p>„Can ist ein absoluter Macher in seinem Handwerk. Besonders Blond bekommt er genauso hin, wie man es sich wünscht – präzise, typgerecht und mit richtig viel Fachwissen.“</p>
 <strong>Sabrina</strong>
 <span>Google Bewertung</span>
 </article>
 
-<article class="review-card">
+<article class="card review-card">
 <span class="stars">★★★★★</span>
 <p>„Schon beim Ankommen wird man herzlich begrüßt. Auf meine Wünsche wurde sehr gut eingegangen und ich wurde ehrlich und ausführlich beraten. Man fühlt sich sofort wohl.“</p>
 <strong>Iela Kaya</strong>
 <span>Google Bewertung</span>
 </article>
 
-<article class="review-card">
+<article class="card review-card">
 <span class="stars">★★★★★</span>
 <p>„Endlich ein Friseur, der wirklich zuhört. Mein Balayage sieht natürlich und gepflegt aus – sogar nach Wochen noch. Komme definitiv wieder.“</p>
 <strong>Sarah K.</strong>
 <span>Google Bewertung</span>
 </article>
 
-<article class="review-card">
+<article class="card review-card">
 <span class="stars">★★★★★</span>
 <p>„Ehrliche Beratung, tolles Ergebnis. Ich wurde nicht zu etwas überredet, sondern perfekt beraten. Der beste Friseur in Dortmund.“</p>
 <strong>Lisa T.</strong>
@@ -815,19 +966,20 @@ Gute Bewertungen verkaufen nicht nur Vertrauen, sondern auch Qualität, Klarheit
 Für Terminvereinbarungen empfehlen wir den direkten Anruf. Schnell, einfach und persönlich.
 </p>
 
-<div class="contact-box">
-<div class="contact-card">
+<div class="contact-grid">
+<div class="card contact-card">
 <h3>Kontakt &amp; Adresse</h3>
-<div class="contact-row"><strong>Salon:</strong>&nbsp; HAIR CS Dortmund</div>
-<div class="contact-row"><strong>Adresse:</strong>&nbsp; Am Knappenberg 36, 44139 Dortmund</div>
-<div class="contact-row"><strong>Telefon:</strong>&nbsp; <a href="tel:023128676166">0231 28676166</a></div>
-<div class="contact-row"><strong>Hinweise:</strong>&nbsp; WLAN vorhanden · WC vorhanden · kinderfreundlich · Terminvereinbarung empfohlen</div>
-<div style="margin-top:28px;">
+<div class="contact-row"><strong>Salon:</strong> <span>HAIR CS Dortmund</span></div>
+<div class="contact-row"><strong>Adresse:</strong> <span>Am Knappenberg 36, 44139 Dortmund</span></div>
+<div class="contact-row"><strong>Telefon:</strong> <span><a href="tel:023128676166">0231 28676166</a></span></div>
+<div class="contact-row"><strong>Hinweise:</strong> <span>WLAN vorhanden · WC vorhanden · kinderfreundlich · Terminvereinbarung empfohlen</span></div>
+
+<div style="margin-top:26px;">
 <a class="btn btn-gold" href="tel:023128676166">Jetzt anrufen</a>
 </div>
 </div>
 
-<div class="contact-card">
+<div class="card contact-card">
 <h3>Öffnungszeiten</h3>
 <ul class="hours-list">
 <li><span>Dienstag</span><strong>10:00–18:00</strong></li>
@@ -848,22 +1000,21 @@ Für Terminvereinbarungen empfehlen wir den direkten Anruf. Schnell, einfach und
 <div class="eyebrow">Rechtliches</div>
 <h2 class="title">Impressum &amp; Datenschutz</h2>
 <p class="subtitle">
-Diese Bereiche dürfen auf einer geschäftlichen Website nicht fehlen.
+Diese Bereiche gehören auf jede geschäftliche Website.
 </p>
 
 <div class="legal-grid">
-<div class="legal-card">
+<div class="card legal-card">
 <h3>Impressum</h3>
 <p><strong>HAIR CS Dortmund</strong></p>
 <p>Am Knappenberg 36<br>44139 Dortmund</p>
 <p>Telefon: 0231 28676166</p>
-<p><strong>Wichtig:</strong> Hier musst du noch den vollständigen Namen der verantwortlichen Person / Inhaberin / des Inhabers ergänzen.</p>
-<p>Beispiel:</p>
-<p>Inhaber: Max Mustermann</p>
+<p><strong>Wichtig:</strong> Hier musst du noch den vollständigen Namen der Inhaberin oder des Inhabers ergänzen.</p>
+<p>Beispiel: Inhaber: Max Mustermann</p>
 <p>Falls vorhanden, später auch USt-IdNr. ergänzen.</p>
 </div>
 
-<div class="legal-card">
+<div class="card legal-card">
 <h3>Datenschutzerklärung</h3>
 <p>Diese Website ist als einfache Präsentationsseite aufgebaut und verwendet aktuell keine Analyse- oder Marketing-Tools.</p>
 <ul>
@@ -873,18 +1024,21 @@ Diese Bereiche dürfen auf einer geschäftlichen Website nicht fehlen.
 <li>Keine externe Terminsoftware</li>
 </ul>
 <p>Beim Hosting können technisch notwendige Server-Logdaten verarbeitet werden.</p>
-<p>Wenn du später Google Maps, Meta Pixel, Analytics, YouTube oder Buchungssysteme einbaust, muss dieser Text erweitert werden.</p>
+<p>Wenn später Google Maps, Meta Pixel, Analytics oder Buchungssysteme eingebaut werden, muss dieser Text erweitert werden.</p>
 </div>
 </div>
 </div>
 </section>
 </main>
 
-<footer class="site-footer">
+<footer class="footer">
 <div class="container footer-wrap">
 <div>© HAIR CS Dortmund</div>
 <div class="footer-links">
 <a href="#leistungen">Leistungen</a>
+<a href="#buchung">Buchung</a>
+<a href="#warum">Warum wir</a>
+<a href="#salon">Salon</a>
 <a href="#bewertungen">Bewertungen</a>
 <a href="#kontakt">Kontakt</a>
 <a href="#impressum">Impressum</a>
@@ -894,5 +1048,34 @@ Diese Bereiche dürfen auf einer geschäftlichen Website nicht fehlen.
 
 <a class="floating-call" href="tel:023128676166">📞 Jetzt anrufen</a>
 
+<script>
+document.getElementById("bookingForm").addEventListener("submit", function(e) {
+e.preventDefault();
+
+const name = document.getElementById("name").value.trim();
+const phone = document.getElementById("phone").value.trim();
+const email = document.getElementById("email").value.trim();
+const service = document.getElementById("service").value.trim();
+const date = document.getElementById("date").value.trim();
+const time = document.getElementById("time").value.trim();
+const message = document.getElementById("message").value.trim();
+
+const subject = encodeURIComponent("Termin-Anfrage HAIR CS Dortmund");
+const body = encodeURIComponent(
+"Hallo HAIR CS Dortmund,\n\n" +
+"ich möchte gerne einen Termin anfragen.\n\n" +
+"Name: " + name + "\n" +
+"Telefon: " + phone + "\n" +
+"E-Mail: " + email + "\n" +
+"Leistung: " + service + "\n" +
+"Wunschdatum: " + date + "\n" +
+"Wunschuhrzeit: " + time + "\n" +
+"Nachricht: " + message + "\n\n" +
+"Bitte melden Sie sich bei mir zurück.\n"
+);
+
+window.location.href = "mailto:deine-email@beispiel.de?subject=" + subject + "&body=" + body;
+});
+</script>
 </body>
 </html>
