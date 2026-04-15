@@ -1,1711 +1,1084 @@
-<!doctype html>
+
+      
+
+              <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HAIR CS Dortmund – Friseur für perfekte Schnitte & Colorationen</title>
-    <meta name="description" content="HAIR CS Dortmund – Ihr Premium-Friseursalon. Spezialisiert auf Balayage, Blond & Coloration. 4,8 Sterne aus über 280 Bewertungen. Jetzt Termin vereinbaren!" />
-    <link rel="canonical" href="https://hair-cs-dortmund.de" />
-
-    <meta property="og:title" content="HAIR CS Dortmund – Premium Friseursalon" />
-    <meta property="og:description" content="Spezialisiert auf Balayage, Blond & Coloration. 4,8 Sterne aus über 280 Bewertungen." />
-    <meta property="og:type" content="website" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "HairSalon",
-      "name": "HAIR CS Dortmund",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Am Knappenberg 36",
-        "addressLocality": "Dortmund",
-        "postalCode": "44139",
-        "addressCountry": "DE"
-      },
-      "telephone": "+4923128676166",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "reviewCount": "280"
-      },
-      "openingHours": ["Mo-Fr 09:00-18:00", "Sa 09:00-14:00"]
-    }
-    </script>
-  </head>
-
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
-{
-  "name": "vite_react_shadcn_ts",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "build:dev": "vite build --mode development",
-    "lint": "eslint .",
-    "preview": "vite preview",
-    "test": "vitest run",
-    "test:watch": "vitest"
-  },
-  "dependencies": {
-    "@hookform/resolvers": "^3.10.0",
-    "@radix-ui/react-accordion": "^1.2.11",
-    "@radix-ui/react-alert-dialog": "^1.1.14",
-    "@radix-ui/react-aspect-ratio": "^1.1.7",
-    "@radix-ui/react-avatar": "^1.1.10",
-    "@radix-ui/react-checkbox": "^1.3.2",
-    "@radix-ui/react-collapsible": "^1.1.11",
-    "@radix-ui/react-context-menu": "^2.2.15",
-    "@radix-ui/react-dialog": "^1.1.14",
-    "@radix-ui/react-dropdown-menu": "^2.1.15",
-    "@radix-ui/react-hover-card": "^1.1.14",
-    "@radix-ui/react-label": "^2.1.7",
-    "@radix-ui/react-menubar": "^1.1.15",
-    "@radix-ui/react-navigation-menu": "^1.2.13",
-    "@radix-ui/react-popover": "^1.1.14",
-    "@radix-ui/react-progress": "^1.1.7",
-    "@radix-ui/react-radio-group": "^1.3.7",
-    "@radix-ui/react-scroll-area": "^1.2.9",
-    "@radix-ui/react-select": "^2.2.5",
-    "@radix-ui/react-separator": "^1.1.7",
-    "@radix-ui/react-slider": "^1.3.5",
-    "@radix-ui/react-slot": "^1.2.3",
-    "@radix-ui/react-switch": "^1.2.5",
-    "@radix-ui/react-tabs": "^1.1.12",
-    "@radix-ui/react-toast": "^1.2.14",
-    "@radix-ui/react-toggle": "^1.1.9",
-    "@radix-ui/react-toggle-group": "^1.1.10",
-    "@radix-ui/react-tooltip": "^1.2.7",
-    "@tanstack/react-query": "^5.83.0",
-    "class-variance-authority": "^0.7.1",
-    "clsx": "^2.1.1",
-    "cmdk": "^1.1.1",
-    "date-fns": "^3.6.0",
-    "embla-carousel-react": "^8.6.0",
-    "input-otp": "^1.4.2",
-    "lucide-react": "^0.462.0",
-    "next-themes": "^0.3.0",
-    "react": "^18.3.1",
-    "react-day-picker": "^8.10.1",
-    "react-dom": "^18.3.1",
-    "react-hook-form": "^7.61.1",
-    "react-resizable-panels": "^2.1.9",
-    "react-router-dom": "^6.30.1",
-    "recharts": "^2.15.4",
-    "sonner": "^1.7.4",
-    "tailwind-merge": "^2.6.0",
-    "tailwindcss-animate": "^1.0.7",
-    "vaul": "^0.9.9",
-    "zod": "^3.25.76"
-  },
-  "devDependencies": {
-    "@eslint/js": "^9.32.0",
-    "@tailwindcss/typography": "^0.5.16",
-    "@testing-library/jest-dom": "^6.6.0",
-    "@testing-library/react": "^16.0.0",
-    "@types/node": "^22.16.5",
-    "@types/react": "^18.3.23",
-    "@types/react-dom": "^18.3.7",
-    "@vitejs/plugin-react-swc": "^3.11.0",
-    "autoprefixer": "^10.4.21",
-    "eslint": "^9.32.0",
-    "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-react-refresh": "^0.4.20",
-    "globals": "^15.15.0",
-    "jsdom": "^20.0.3",
-    "lovable-tagger": "^1.1.13",
-    "postcss": "^8.5.6",
-    "tailwindcss": "^3.4.17",
-    "typescript": "^5.8.3",
-    "typescript-eslint": "^8.38.0",
-    "vite": "^5.4.19",
-    "vitest": "^3.2.4"
-  }
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>HAIR CS Dortmund | Premium Friseursalon</title>
+<meta name="description" content="HAIR CS Dortmund – Premium Friseursalon für Balayage, Blond, Coloration, Haarschnitt, Styling und Terminbuchung in Dortmund." />
+<style>
+:root{
+--bg:#f7f2eb;
+--bg-2:#f3ede4;
+--card:#fffaf4;
+--white:#ffffff;
+--text:#2a2430;
+--muted:#7b7380;
+--gold:#c8a15a;
+--gold-dark:#b68b43;
+--rose:#eadfd6;
+--line:#e7ddd1;
+--shadow:0 20px 60px rgba(55, 39, 24, 0.08);
+--radius:30px;
+--max:1200px;
 }
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react-swc";
-import path from "path";
-import { componentTagger } from "lovable-tagger";
 
-// https://vitejs.dev/config/
-export default defineConfig(({ mode }) => ({
-  server: {
-    host: "::",
-    port: 8080,
-    hmr: {
-      overlay: false,
-    },
-  },
-  plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
-  resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "./src"),
-    },
-    dedupe: ["react", "react-dom", "react/jsx-runtime", "react/jsx-dev-runtime", "@tanstack/react-query", "@tanstack/query-core"],
-  },
-}));
-{
-  "compilerOptions": {
-    "allowJs": true,
-    "noImplicitAny": false,
-    "noUnusedLocals": false,
-    "noUnusedParameters": false,
-    "paths": {
-      "@/*": [
-        "./src/*"
-      ]
-    },
-    "skipLibCheck": true,
-    "strictNullChecks": false
-  },
-  "files": [],
-  "references": [
-    {
-      "path": "./tsconfig.app.json"
-    },
-    {
-      "path": "./tsconfig.node.json"
-    }
-  ]
-}{
-  "compilerOptions": {
-    "allowImportingTsExtensions": true,
-    "isolatedModules": true,
-    "jsx": "react-jsx",
-    "lib": [
-      "ES2020",
-      "DOM",
-      "DOM.Iterable"
-    ],
-    "module": "ESNext",
-    "moduleDetection": "force",
-    "moduleResolution": "bundler",
-    "noEmit": true,
-    "noFallthroughCasesInSwitch": false,
-    "noImplicitAny": false,
-    "noUnusedLocals": false,
-    "noUnusedParameters": false,
-    "paths": {
-      "@/*": [
-        "./src/*"
-      ]
-    },
-    "skipLibCheck": true,
-    "strict": false,
-    "target": "ES2020",
-    "types": [
-      "vitest/globals"
-    ],
-    "useDefineForClassFields": true
-  },
-  "include": [
-    "src"
-  ]
-}{
-  "compilerOptions": {
-    "target": "ES2022",
-    "lib": ["ES2023"],
-    "module": "ESNext",
-    "skipLibCheck": true,
-
-    /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "isolatedModules": true,
-    "moduleDetection": "force",
-    "noEmit": true,
-
-    /* Linting */
-    "strict": true,
-    "noUnusedLocals": false,
-    "noUnusedParameters": false,
-    "noFallthroughCasesInSwitch": true
-  },
-  "include": ["vite.config.ts"]
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+margin:0;
+font-family:"Georgia","Times New Roman",serif;
+background:
+radial-gradient(circle at top right, rgba(200,161,90,0.08), transparent 18%),
+linear-gradient(180deg, var(--bg) 0%, #f9f5ef 100%);
+color:var(--text);
+line-height:1.5;
 }
-export default {
-  plugins: {
-    tailwindcss: {},
-    autoprefixer: {},
-  },
-};
-import type { Config } from "tailwindcss";
 
-export default {
-  darkMode: ["class"],
-  content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
-  prefix: "",
-  theme: {
-    container: {
-      center: true,
-      padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
-    },
-    extend: {
-      fontFamily: {
-        sans: ["Inter", "system-ui", "sans-serif"],
-        serif: ["Cormorant Garamond", "Georgia", "serif"],
-      },
-      colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
-        },
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
-        },
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
-        },
-        muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
-        },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
-        },
-        popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
-        },
-        card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
-        },
-        gold: "hsl(var(--gold))",
-        "gold-light": "hsl(var(--gold-light))",
-        charcoal: "hsl(var(--charcoal))",
-        "charcoal-light": "hsl(var(--charcoal-light))",
-        beige: "hsl(var(--beige))",
-        "beige-dark": "hsl(var(--beige-dark))",
-        sidebar: {
-          DEFAULT: "hsl(var(--sidebar-background))",
-          foreground: "hsl(var(--sidebar-foreground))",
-          primary: "hsl(var(--sidebar-primary))",
-          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
-          accent: "hsl(var(--sidebar-accent))",
-          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          border: "hsl(var(--sidebar-border))",
-          ring: "hsl(var(--sidebar-ring))",
-        },
-      },
-      borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
-      },
-      keyframes: {
-        "accordion-down": {
-          from: { height: "0" },
-          to: { height: "var(--radix-accordion-content-height)" },
-        },
-        "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: "0" },
-        },
-        "fade-in": {
-          from: { opacity: "0", transform: "translateY(20px)" },
-          to: { opacity: "1", transform: "translateY(0)" },
-        },
-      },
-      animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
-        "fade-in": "fade-in 0.6s ease-out forwards",
-      },
-    },
-  },
-  plugins: [require("tailwindcss-animate")],
-} satisfies Config;
-{
-  "$schema": "https://ui.shadcn.com/schema.json",
-  "style": "default",
-  "rsc": false,
-  "tsx": true,
-  "tailwind": {
-    "config": "tailwind.config.ts",
-    "css": "src/index.css",
-    "baseColor": "slate",
-    "cssVariables": true,
-    "prefix": ""
-  },
-  "aliases": {
-    "components": "@/components",
-    "utils": "@/lib/utils",
-    "ui": "@/components/ui",
-    "lib": "@/lib",
-    "hooks": "@/hooks"
-  }
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+
+.container{
+width:min(calc(100% - 32px), var(--max));
+margin:0 auto;
 }
-import js from "@eslint/js";
-import globals from "globals";
-import reactHooks from "eslint-plugin-react-hooks";
-import reactRefresh from "eslint-plugin-react-refresh";
-import tseslint from "typescript-eslint";
 
-export default tseslint.config(
-  { ignores: ["dist"] },
-  {
-    extends: [js.configs.recommended, ...tseslint.configs.recommended],
-    files: ["**/*.{ts,tsx}"],
-    languageOptions: {
-      ecmaVersion: 2020,
-      globals: globals.browser,
-    },
-    plugins: {
-      "react-hooks": reactHooks,
-      "react-refresh": reactRefresh,
-    },
-    rules: {
-      ...reactHooks.configs.recommended.rules,
-      "react-refresh/only-export-components": ["warn", { allowConstantExport: true }],
-      "@typescript-eslint/no-unused-vars": "off",
-    },
-  },
+.section{
+padding:110px 0;
+}
+
+.eyebrow{
+display:inline-block;
+font-family:Arial, sans-serif;
+text-transform:uppercase;
+letter-spacing:.14em;
+font-size:14px;
+font-weight:700;
+color:var(--gold);
+margin-bottom:18px;
+}
+
+.title{
+margin:0 0 18px;
+font-size:clamp(42px, 6vw, 84px);
+line-height:1.03;
+letter-spacing:-0.04em;
+font-weight:500;
+}
+
+.subtitle{
+margin:0;
+max-width:760px;
+font-family:Arial, sans-serif;
+color:var(--muted);
+font-size:20px;
+line-height:1.75;
+}
+
+.site-header{
+position:sticky;
+top:0;
+z-index:60;
+background:rgba(247,242,235,0.9);
+backdrop-filter:blur(14px);
+border-bottom:1px solid rgba(231,221,209,0.85);
+}
+
+.nav{
+min-height:92px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:20px;
+}
+
+.brand{
+font-size:28px;
+letter-spacing:.06em;
+font-weight:500;
+}
+
+.brand span{
+color:var(--gold);
+}
+
+.nav-links{
+display:flex;
+align-items:center;
+gap:28px;
+font-family:Arial, sans-serif;
+}
+
+.nav-links a{
+font-size:15px;
+color:#453f49;
+font-weight:700;
+}
+
+.btn{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+gap:10px;
+min-height:58px;
+padding:0 28px;
+border-radius:999px;
+font-family:Arial, sans-serif;
+font-size:17px;
+font-weight:700;
+border:1px solid transparent;
+cursor:pointer;
+transition:.2s ease;
+}
+
+.btn:hover{transform:translateY(-1px)}
+
+.btn-gold{
+background:linear-gradient(135deg, var(--gold), var(--gold-dark));
+color:white;
+box-shadow:0 18px 35px rgba(200,161,90,0.22);
+}
+
+.btn-outline{
+border-color:var(--gold);
+color:var(--gold-dark);
+background:rgba(255,255,255,0.35);
+}
+
+.hero{
+padding:34px 0 32px;
+}
+
+.hero-card{
+min-height:860px;
+border-radius:38px;
+overflow:hidden;
+position:relative;
+background:
+linear-gradient(90deg, rgba(34,25,31,.70) 0%, rgba(34,25,31,.48) 38%, rgba(34,25,31,.12) 76%),
+url("hero.jpg") center center / cover no-repeat;
+box-shadow:var(--shadow);
+display:flex;
+align-items:center;
+}
+
+.hero-content{
+max-width:760px;
+padding:82px 68px;
+color:white;
+}
+
+.hero-rating{
+font-family:Arial, sans-serif;
+color:rgba(255,255,255,.88);
+font-size:16px;
+margin-bottom:24px;
+}
+
+.stars{
+color:var(--gold);
+letter-spacing:.14em;
+margin-right:10px;
+font-size:20px;
+}
+
+.hero h1{
+margin:0 0 22px;
+color:white;
+font-size:clamp(46px, 7vw, 88px);
+line-height:1.02;
+letter-spacing:-0.05em;
+font-weight:500;
+max-width:720px;
+}
+
+.hero p{
+margin:0 0 34px;
+max-width:700px;
+font-family:Arial, sans-serif;
+color:rgba(255,255,255,.86);
+font-size:22px;
+line-height:1.75;
+}
+
+.hero-actions{
+display:flex;
+gap:14px;
+flex-wrap:wrap;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:18px;
+margin-top:26px;
+}
+
+.stat{
+background:rgba(255,250,244,.72);
+border:1px solid rgba(255,255,255,.55);
+border-radius:26px;
+padding:28px 20px;
+text-align:center;
+box-shadow:var(--shadow);
+}
+
+.stat-icon{
+font-size:26px;
+color:var(--gold);
+margin-bottom:10px;
+}
+
+.stat strong{
+display:block;
+font-size:34px;
+font-weight:500;
+margin-bottom:4px;
+}
+
+.stat span{
+display:block;
+font-family:Arial, sans-serif;
+color:var(--muted);
+font-size:15px;
+line-height:1.5;
+}
+
+.services-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:26px;
+margin-top:46px;
+}
+
+.card{
+background:linear-gradient(180deg, rgba(255,250,244,0.96) 0%, rgba(255,255,255,0.96) 100%);
+border:1px solid var(--line);
+border-radius:30px;
+box-shadow:var(--shadow);
+}
+
+.service-card{
+padding:40px;
+}
+
+.service-icon{
+width:74px;
+height:74px;
+border-radius:50%;
+display:grid;
+place-items:center;
+background:#f5ebde;
+color:var(--gold);
+font-size:30px;
+margin-bottom:24px;
+}
+
+.service-card h3{
+margin:0 0 16px;
+font-size:30px;
+font-weight:500;
+}
+
+.service-card p{
+margin:0;
+font-family:Arial, sans-serif;
+color:var(--muted);
+font-size:20px;
+line-height:1.75;
+}
+
+.booking-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:26px;
+margin-top:46px;
+}
+
+.booking-card{
+padding:40px;
+}
+
+.booking-card h3{
+margin:0 0 18px;
+font-size:32px;
+font-weight:500;
+}
+
+.booking-list{
+margin:0;
+padding-left:18px;
+font-family:Arial, sans-serif;
+color:var(--muted);
+font-size:18px;
+line-height:1.9;
+}
+
+.booking-form{
+display:grid;
+gap:16px;
+margin-top:8px;
+}
+
+.booking-form label{
+display:grid;
+gap:8px;
+font-family:Arial, sans-serif;
+font-size:15px;
+font-weight:700;
+color:#4a434d;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea{
+width:100%;
+min-height:56px;
+border-radius:18px;
+border:1px solid var(--line);
+background:#fffdf9;
+padding:14px 16px;
+font-family:Arial, sans-serif;
+font-size:16px;
+color:var(--text);
+outline:none;
+}
+
+.booking-form textarea{
+min-height:130px;
+resize:vertical;
+}
+
+.booking-note{
+font-family:Arial, sans-serif;
+color:var(--muted);
+font-size:14px;
+line-height:1.7;
+margin-top:10px;
+}
+
+.about-wrap{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:46px;
+align-items:start;
+margin-top:44px;
+}
+
+.why-list{
+display:grid;
+gap:30px;
+}
+
+.why-item{
+display:grid;
+grid-template-columns:94px 1fr;
+gap:24px;
+align-items:start;
+}
+
+.why-badge{
+width:94px;
+height:94px;
+border-radius:50%;
+display:grid;
+place-items:center;
+background:#f6ede0;
+color:var(--gold);
+font-size:36px;
+}
+
+.why-item h3{
+margin:0 0 10px;
+font-size:31px;
+font-weight:500;
+}
+
+.why-item p{
+margin:0;
+font-family:Arial, sans-serif;
+color:var(--muted);
+font-size:20px;
+line-height:1.75;
+}
+
+.about-image{
+overflow:hidden;
+min-height:760px;
+}
+
+.about-image img{
+width:100%;
+height:100%;
+min-height:760px;
+object-fit:cover;
+border-radius:30px;
+}
+
+.gallery-grid{
+display:grid;
+grid-template-columns:1.2fr .8fr;
+gap:24px;
+margin-top:44px;
+}
+
+.gallery-main,
+.gallery-side img{
+border-radius:30px;
+border:1px solid var(--line);
+box-shadow:var(--shadow);
+object-fit:cover;
+width:100%;
+}
+
+.gallery-main{
+min-height:640px;
+height:100%;
+}
+
+.gallery-side{
+display:grid;
+gap:24px;
+}
+
+.gallery-side img{
+min-height:308px;
+height:100%;
+}
+
+.review-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:26px;
+margin-top:46px;
+}
+
+.review-card{
+padding:38px;
+}
+
+.review-card .stars{
+display:block;
+margin-bottom:24px;
+color:#7f8791;
+letter-spacing:.10em;
+}
+
+.review-card p{
+margin:0 0 26px;
+font-family:Arial, sans-serif;
+color:#6f7682;
+font-size:21px;
+line-height:1.9;
+font-style:italic;
+}
+
+.review-card strong{
+display:block;
+font-family:Arial, sans-serif;
+font-size:20px;
+color:var(--text);
+margin-bottom:6px;
+}
+
+.review-card span{
+font-family:Arial, sans-serif;
+color:var(--muted);
+font-size:16px;
+}
+
+.contact-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:26px;
+margin-top:46px;
+}
+
+.contact-card{
+padding:40px;
+}
+
+.contact-card h3{
+margin:0 0 22px;
+font-size:32px;
+font-weight:500;
+}
+
+.contact-row{
+margin-bottom:18px;
+display:flex;
+gap:12px;
+font-family:Arial, sans-serif;
+font-size:19px;
+color:var(--muted);
+line-height:1.7;
+}
+
+.contact-row strong{
+color:var(--text);
+font-weight:700;
+min-width:110px;
+}
+
+.hours-list{
+list-style:none;
+padding:0;
+margin:0;
+font-family:Arial, sans-serif;
+}
+
+.hours-list li{
+display:flex;
+justify-content:space-between;
+gap:18px;
+padding:14px 0;
+border-bottom:1px solid var(--line);
+color:var(--muted);
+font-size:18px;
+}
+
+.hours-list li strong{
+color:var(--text);
+}
+
+.legal-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:26px;
+margin-top:46px;
+}
+
+.legal-card{
+padding:40px;
+}
+
+.legal-card h3{
+margin:0 0 18px;
+font-size:32px;
+font-weight:500;
+}
+
+.legal-card p,
+.legal-card li{
+margin:0 0 14px;
+font-family:Arial, sans-serif;
+color:var(--muted);
+font-size:17px;
+line-height:1.8;
+}
+
+.legal-card ul{
+margin:0;
+padding-left:20px;
+}
+
+.footer{
+margin-top:70px;
+padding:34px 0;
+background:#211b21;
+color:#f2e7d6;
+}
+
+.footer-wrap{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.footer-links{
+display:flex;
+flex-wrap:wrap;
+gap:18px;
+font-family:Arial, sans-serif;
+font-size:14px;
+}
+
+.footer-links a{
+color:#e7d6bf;
+}
+
+.floating-call{
+position:fixed;
+right:22px;
+bottom:22px;
+z-index:55;
+display:flex;
+align-items:center;
+gap:10px;
+min-height:60px;
+padding:0 26px;
+border-radius:999px;
+background:linear-gradient(135deg, var(--gold), var(--gold-dark));
+color:white;
+font-family:Arial, sans-serif;
+font-size:17px;
+font-weight:700;
+box-shadow:0 18px 40px rgba(200,161,90,0.28);
+}
+
+@media (max-width: 980px){
+.nav-links{display:none}
+.hero-card{min-height:740px}
+.hero-content{padding:44px 26px}
+.stats,
+.services-grid,
+.booking-grid,
+.about-wrap,
+.gallery-grid,
+.review-grid,
+.contact-grid,
+.legal-grid{
+grid-template-columns:1fr;
+}
+.about-image,
+.about-image img{
+min-height:420px;
+}
+.why-item{
+grid-template-columns:74px 1fr;
+}
+.why-badge{
+width:74px;
+height:74px;
+font-size:28px;
+}
+.section{padding:80px 0}
+.floating-call{
+left:16px;
+right:16px;
+justify-content:center;
+}
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+<div class="container nav">
+<a class="brand" href="#top">HAIR <span>CS</span></a>
+
+<nav class="nav-links">
+<a href="#leistungen">Leistungen</a>
+<a href="#buchung">Buchung</a>
+<a href="#warum">Warum wir</a>
+<a href="#salon">Salon</a>
+<a href="#bewertungen">Bewertungen</a>
+<a href="#kontakt">Kontakt</a>
+<a href="#impressum">Impressum</a>
+</nav>
+
+<a class="btn btn-gold" href="#buchung">Termin buchen</a>
+</div>
+</header>
+
+<main id="top">
+<section class="hero container">
+<div class="hero-card">
+<div class="hero-content">
+<div class="hero-rating">
+<span class="stars">★★★★★</span>
+4,8 Sterne · 280+ zufriedene Kunden
+</div>
+
+<h1>Balayage, Blond &amp; Coloration – Ihr stilvoller Salon in Dortmund</h1>
+
+<p>
+Für moderne Looks, weiche Farbverläufe, präzise Schnitte und ein
+Ergebnis, das elegant, feminin und hochwertig wirkt.
+</p>
+
+<div class="hero-actions">
+<a class="btn btn-gold" href="#buchung">Termin buchen</a>
+<a class="btn btn-outline" href="#leistungen">Leistungen ansehen</a>
+</div>
+</div>
+</div>
+
+<div class="stats">
+<div class="stat">
+<div class="stat-icon">★</div>
+<strong>4,8</strong>
+<span>Google Bewertung</span>
+</div>
+<div class="stat">
+<div class="stat-icon">👥</div>
+<strong>280+</strong>
+<span>Zufriedene Kunden</span>
+</div>
+<div class="stat">
+<div class="stat-icon">🏅</div>
+<strong>10+</strong>
+<span>Jahre in Dortmund</span>
+</div>
+<div class="stat">
+<div class="stat-icon">✦</div>
+<strong>Kérastase</strong>
+<span>Premium-Produkte</span>
+</div>
+</div>
+</section>
+
+<section class="section" id="leistungen">
+<div class="container">
+<div class="eyebrow">Unsere Leistungen</div>
+<h2 class="title">Worauf unsere Kundinnen in Dortmund vertrauen</h2>
+<p class="subtitle">
+Hochwertige Farbtechniken, moderne Schnitte und liebevoll abgestimmtes Styling
+mit einem klaren Premium-Gefühl.
+</p>
+
+<div class="services-grid">
+<article class="card service-card">
+<div class="service-icon">🖌</div>
+<h3>Balayage</h3>
+<p>Natürliche, sonnengeküsste Farbverläufe, die weich, luxuriös und monatelang schön wirken.</p>
+</article>
+
+<article class="card service-card">
+<div class="service-icon">✧</div>
+<h3>Blond &amp; Coloration</h3>
+<p>Von Honigblond bis Platinblond: strahlende, saubere Ergebnisse mit Glanz und Eleganz.</p>
+</article>
+
+<article class="card service-card">
+<div class="service-icon">✂</div>
+<h3>Haarschnitt</h3>
+<p>Präzise Schnitte, die Ihre Gesichtsform und Ihren Stil perfekt betonen – modern und hochwertig.</p>
+</article>
+
+<article class="card service-card">
+<div class="service-icon">༄</div>
+<h3>Styling &amp; Blow-out</h3>
+<p>Perfektes Styling mit Bewegung, Volumen und elegantem Finish für Alltag, Event oder besondere Anlässe.</p>
+</article>
+
+<article class="card service-card">
+<div class="service-icon">◌</div>
+<h3>Dauerwelle &amp; Locken</h3>
+<p>Natürliches Volumen und definierte Bewegung mit moderner Technik und einem weichen, tragbaren Ergebnis.</p>
+</article>
+
+<article class="card service-card">
+<div class="service-icon">🧴</div>
+<h3>Pflege &amp; Beratung</h3>
+<p>Ehrliche Beratung und passende Produktempfehlungen für gesundes, glänzendes Haar auch nach dem Termin.</p>
+</article>
+</div>
+</div>
+</section>
+
+<section class="section" id="buchung">
+<div class="container">
+<div class="eyebrow">Online Terminbuchung</div>
+<h2 class="title">Termin direkt online anfragen</h2>
+<p class="subtitle">
+Kunden können ihren Wunschtermin einfach online anfragen. Die Anfrage wird dann per E-Mail vorbereitet.
+</p>
+
+<div class="booking-grid">
+<div class="card booking-card">
+<h3>So funktioniert es</h3>
+<ul class="booking-list">
+<li>Leistung auswählen</li>
+<li>Wunschdatum und Uhrzeit eintragen</li>
+<li>Kontaktdaten angeben</li>
+<li>Termin-Anfrage senden</li>
+</ul>
+<p class="booking-note">
+Hinweis: Diese Version erstellt eine professionelle Termin-Anfrage per E-Mail.
+Für automatische Kalenderbuchung mit festen freien Zeiten brauchst du später zusätzlich ein externes Buchungssystem.
+</p>
+</div>
+
+<div class="card booking-card">
+<h3>Termin anfragen</h3>
+
+<form class="booking-form" id="bookingForm">
+<label>
+Vorname & Nachname
+<input type="text" id="name" placeholder="Ihr Name" required>
+</label>
+
+<label>
+Telefonnummer
+<input type="tel" id="phone" placeholder="Ihre Telefonnummer" required>
+</label>
+
+<label>
+E-Mail
+<input type="email" id="email" placeholder="Ihre E-Mail-Adresse" required>
+</label>
+
+<label>
+Gewünschte Leistung
+<select id="service" required>
+<option value="">Bitte auswählen</option>
+<option>Balayage</option>
+<option>Blond & Coloration</option>
+<option>Haarschnitt</option>
+<option>Styling & Blow-out</option>
+<option>Dauerwelle & Locken</option>
+<option>Pflege & Beratung</option>
+</select>
+</label>
+
+<label>
+Wunschdatum
+<input type="date" id="date" required>
+</label>
+
+<label>
+Wunschuhrzeit
+<input type="time" id="time" required>
+</label>
+
+<label>
+Nachricht
+<textarea id="message" placeholder="Zusätzliche Wünsche oder Hinweise"></textarea>
+</label>
+
+<button type="submit" class="btn btn-gold">Anfrage senden</button>
+</form>
+
+<p class="booking-note">
+Beim Klick auf „Anfrage senden“ öffnet sich das E-Mail-Programm mit der fertigen Anfrage.
+</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section" id="warum">
+<div class="container">
+<div class="eyebrow">Warum Hair CS?</div>
+<h2 class="title">Ihr Friseur in Dortmund – seit über 10 Jahren</h2>
+<p class="subtitle">
+Unsere Stärke ist nicht nur das Ergebnis, sondern das gesamte Gefühl:
+Beratung, Atmosphäre, Präzision und ehrliche Empfehlung.
+</p>
+
+<div class="about-wrap">
+<div class="why-list">
+<div class="why-item">
+<div class="why-badge">◎</div>
+<div>
+<h3>Über 10 Jahre Erfahrung</h3>
+<p>Tausende zufriedene Kunden – vom klassischen Schnitt bis zur anspruchsvollen Blond- und Balayage-Technik.</p>
+</div>
+</div>
+
+<div class="why-item">
+<div class="why-badge">🎨</div>
+<div>
+<h3>Blond- &amp; Color-Spezialist</h3>
+<p>Unsere Kernkompetenz: klares Blond, elegante Übergänge und lebendige Farben, die lange schön aussehen.</p>
+</div>
+</div>
+
+<div class="why-item">
+<div class="why-badge">◇</div>
+<div>
+<h3>Kérastase-Produkte</h3>
+<p>Wir arbeiten mit hochwertigen Premium-Produkten für Schutz, Pflege und sichtbaren Glanz nach jedem Termin.</p>
+</div>
+</div>
+
+<div class="why-item">
+<div class="why-badge">♡</div>
+<div>
+<h3>Persönlich &amp; ehrlich</h3>
+<p>Ehrliche Beratung statt Überredung. Wir empfehlen nur, was wirklich zu Haar, Wunsch und Alltag passt.</p>
+</div>
+</div>
+</div>
+
+<div class="card about-image">
+<img src="salon1.jpg" alt="Innenansicht des HAIR CS Dortmund Salons">
+</div>
+</div>
+</div>
+</section>
+
+<section class="section" id="salon">
+<div class="container">
+<div class="eyebrow">Unser Salon</div>
+<h2 class="title">Einblick in unser Studio</h2>
+<p class="subtitle">
+Ein heller, gepflegter Raum mit stilvoller Atmosphäre – modern, ruhig und hochwertig.
+</p>
+
+<div class="gallery-grid">
+<img class="gallery-main" src="salon2.jpg" alt="Außenansicht oder Hauptansicht des Salons">
+<div class="gallery-side">
+<img src="salon3.jpg" alt="Einrichtung und Styling-Bereich im Salon">
+<img src="salon4.jpg" alt="Produkte und Interior von HAIR CS Dortmund">
+</div>
+</div>
+</div>
+</section>
+
+<section class="section" id="bewertungen">
+<div class="container">
+<div class="eyebrow">Kundenstimmen</div>
+<h2 class="title">Über 280 zufriedene Kunden – das sagen sie</h2>
+<p class="subtitle">
+Gute Bewertungen verkaufen nicht nur Vertrauen, sondern auch Qualität, Klarheit und Professionalität.
+</p>
+
+<div class="review-grid">
+<article class="card review-card">
+<span class="stars">★★★★★</span>
+<p>„Can ist ein absoluter Macher in seinem Handwerk. Besonders Blond bekommt er genauso hin, wie man es sich wünscht – präzise, typgerecht und mit richtig viel Fachwissen.“</p>
+<strong>Sabrina</strong>
+<span>Google Bewertung</span>
+</article>
+
+<article class="card review-card">
+<span class="stars">★★★★★</span>
+<p>„Schon beim Ankommen wird man herzlich begrüßt. Auf meine Wünsche wurde sehr gut eingegangen und ich wurde ehrlich und ausführlich beraten. Man fühlt sich sofort wohl.“</p>
+<strong>Iela Kaya</strong>
+<span>Google Bewertung</span>
+</article>
+
+<article class="card review-card">
+<span class="stars">★★★★★</span>
+<p>„Endlich ein Friseur, der wirklich zuhört. Mein Balayage sieht natürlich und gepflegt aus – sogar nach Wochen noch. Komme definitiv wieder.“</p>
+<strong>Sarah K.</strong>
+<span>Google Bewertung</span>
+</article>
+
+<article class="card review-card">
+<span class="stars">★★★★★</span>
+<p>„Ehrliche Beratung, tolles Ergebnis. Ich wurde nicht zu etwas überredet, sondern perfekt beraten. Der beste Friseur in Dortmund.“</p>
+<strong>Lisa T.</strong>
+<span>Google Bewertung</span>
+</article>
+</div>
+</div>
+</section>
+
+<section class="section" id="kontakt">
+<div class="container">
+<div class="eyebrow">Kontakt</div>
+<h2 class="title">Besuchen Sie uns in Dortmund</h2>
+<p class="subtitle">
+Für Terminvereinbarungen empfehlen wir den direkten Anruf. Schnell, einfach und persönlich.
+</p>
+
+<div class="contact-grid">
+<div class="card contact-card">
+<h3>Kontakt &amp; Adresse</h3>
+<div class="contact-row"><strong>Salon:</strong> <span>HAIR CS Dortmund</span></div>
+<div class="contact-row"><strong>Adresse:</strong> <span>Am Knappenberg 36, 44139 Dortmund</span></div>
+<div class="contact-row"><strong>Telefon:</strong> <span><a href="tel:023128676166">0231 28676166</a></span></div>
+<div class="contact-row"><strong>Hinweise:</strong> <span>WLAN vorhanden · WC vorhanden · kinderfreundlich · Terminvereinbarung empfohlen</span></div>
+
+<div style="margin-top:26px;">
+<a class="btn btn-gold" href="tel:023128676166">Jetzt anrufen</a>
+</div>
+</div>
+
+<div class="card contact-card">
+<h3>Öffnungszeiten</h3>
+<ul class="hours-list">
+<li><span>Dienstag</span><strong>10:00–18:00</strong></li>
+<li><span>Mittwoch</span><strong>10:00–18:00</strong></li>
+<li><span>Donnerstag</span><strong>10:00–18:00</strong></li>
+<li><span>Freitag</span><strong>10:00–18:00</strong></li>
+<li><span>Samstag</span><strong>10:00–14:00</strong></li>
+<li><span>Sonntag</span><strong>Geschlossen</strong></li>
+<li><span>Montag</span><strong>Geschlossen</strong></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section" id="impressum">
+<div class="container">
+<div class="eyebrow">Rechtliches</div>
+<h2 class="title">Impressum &amp; Datenschutz</h2>
+<p class="subtitle">
+Diese Bereiche gehören auf jede geschäftliche Website.
+</p>
+
+<div class="legal-grid">
+<div class="card legal-card">
+<h3>Impressum</h3>
+<p><strong>HAIR CS Dortmund</strong></p>
+<p>Am Knappenberg 36<br>44139 Dortmund</p>
+<p>Telefon: 0231 28676166</p>
+<p><strong>Wichtig:</strong> Hier musst du noch den vollständigen Namen der Inhaberin oder des Inhabers ergänzen.</p>
+<p>Beispiel: Inhaber: Max Mustermann</p>
+<p>Falls vorhanden, später auch USt-IdNr. ergänzen.</p>
+</div>
+
+<div class="card legal-card">
+<h3>Datenschutzerklärung</h3>
+<p>Diese Website ist als einfache Präsentationsseite aufgebaut und verwendet aktuell keine Analyse- oder Marketing-Tools.</p>
+<ul>
+<li>Keine Tracking-Tools</li>
+<li>Keine Marketing-Cookies</li>
+<li>Keine eingebettete Karte</li>
+<li>Keine externe Terminsoftware</li>
+</ul>
+<p>Beim Hosting können technisch notwendige Server-Logdaten verarbeitet werden.</p>
+<p>Wenn später Google Maps, Meta Pixel, Analytics oder Buchungssysteme eingebaut werden, muss dieser Text erweitert werden.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer class="footer">
+<div class="container footer-wrap">
+<div>© HAIR CS Dortmund</div>
+<div class="footer-links">
+<a href="#leistungen">Leistungen</a>
+<a href="#buchung">Buchung</a>
+<a href="#warum">Warum wir</a>
+<a href="#salon">Salon</a>
+<a href="#bewertungen">Bewertungen</a>
+<a href="#kontakt">Kontakt</a>
+<a href="#impressum">Impressum</a>
+</div>
+</div>
+</footer>
+
+<a class="floating-call" href="tel:023128676166">📞 Jetzt anrufen</a>
+
+<script>
+document.getElementById("bookingForm").addEventListener("submit", function(e) {
+e.preventDefault();
+
+const name = document.getElementById("name").value.trim();
+const phone = document.getElementById("phone").value.trim();
+const email = document.getElementById("email").value.trim();
+const service = document.getElementById("service").value.trim();
+const date = document.getElementById("date").value.trim();
+const time = document.getElementById("time").value.trim();
+const message = document.getElementById("message").value.trim();
+
+const subject = encodeURIComponent("Termin-Anfrage HAIR CS Dortmund");
+const body = encodeURIComponent(
+"Hallo HAIR CS Dortmund,\n\n" +
+"ich möchte gerne einen Termin anfragen.\n\n" +
+"Name: " + name + "\n" +
+"Telefon: " + phone + "\n" +
+"E-Mail: " + email + "\n" +
+"Leistung: " + service + "\n" +
+"Wunschdatum: " + date + "\n" +
+"Wunschuhrzeit: " + time + "\n" +
+"Nachricht: " + message + "\n\n" +
+"Bitte melden Sie sich bei mir zurück.\n"
 );
-import { defineConfig } from "vitest/config";
-import react from "@vitejs/plugin-react-swc";
-import path from "path";
 
-export default defineConfig({
-  plugins: [react()],
-  test: {
-    environment: "jsdom",
-    globals: true,
-    setupFiles: ["./src/test/setup.ts"],
-    include: ["src/**/*.{test,spec}.{ts,tsx}"],
-  },
-  resolve: {
-    alias: { "@": path.resolve(__dirname, "./src") },
-  },
+window.location.href = "mailto:deine-email@beispiel.de?subject=" + subject + "&body=" + body;
 });
-=== SEPARATOR ===
-
-
-========== src/main.tsx ==========
-
-import { createRoot } from "react-dom/client";
-import App from "./App.tsx";
-import "./index.css";
-
-createRoot(document.getElementById("root")!).render(<App />);
-
-
-========== src/App.tsx ==========
-
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { Toaster } from "@/components/ui/toaster";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import FloatingCTA from "@/components/FloatingCTA";
-import Index from "./pages/Index";
-import Services from "./pages/Services";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import NotFound from "./pages/NotFound";
-
-const queryClient = new QueryClient();
-
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/leistungen" element={<Services />} />
-          <Route path="/ueber-uns" element={<About />} />
-          <Route path="/kontakt" element={<Contact />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-        <Footer />
-        <FloatingCTA />
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
-
-export default App;
-
-
-========== src/App.css ==========
-
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
-
-========== src/index.css ==========
-
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap');
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer base {
-  :root {
-    --background: 40 33% 98%;
-    --foreground: 220 20% 18%;
-
-    --card: 40 25% 96%;
-    --card-foreground: 220 20% 18%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 220 20% 18%;
-
-    --primary: 220 20% 18%;
-    --primary-foreground: 40 33% 98%;
-
-    --secondary: 40 25% 93%;
-    --secondary-foreground: 220 20% 18%;
-
-    --muted: 40 15% 94%;
-    --muted-foreground: 220 10% 50%;
-
-    --accent: 40 50% 52%;
-    --accent-foreground: 0 0% 100%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 40 20% 88%;
-    --input: 40 20% 88%;
-    --ring: 40 50% 52%;
-
-    --radius: 0.375rem;
-
-    --gold: 40 50% 52%;
-    --gold-light: 40 40% 92%;
-    --charcoal: 220 20% 18%;
-    --charcoal-light: 220 10% 35%;
-    --beige: 40 33% 96%;
-    --beige-dark: 40 20% 88%;
-
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-
-  .dark {
-    --background: 220 20% 8%;
-    --foreground: 40 33% 96%;
-    --card: 220 20% 12%;
-    --card-foreground: 40 33% 96%;
-    --popover: 220 20% 10%;
-    --popover-foreground: 40 33% 96%;
-    --primary: 40 33% 96%;
-    --primary-foreground: 220 20% 8%;
-    --secondary: 220 15% 16%;
-    --secondary-foreground: 40 33% 96%;
-    --muted: 220 15% 16%;
-    --muted-foreground: 220 10% 60%;
-    --accent: 40 50% 52%;
-    --accent-foreground: 0 0% 100%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 220 15% 20%;
-    --input: 220 15% 20%;
-    --ring: 40 50% 52%;
-  }
-}
-
-@layer base {
-  * {
-    @apply border-border;
-  }
-
-  body {
-    @apply bg-background text-foreground font-sans antialiased;
-  }
-
-  h1, h2, h3, h4 {
-    font-family: 'Cormorant Garamond', serif;
-  }
-}
-
-@layer utilities {
-  .text-gold {
-    color: hsl(var(--gold));
-  }
-
-  .bg-gold {
-    background-color: hsl(var(--gold));
-  }
-
-  .bg-beige {
-    background-color: hsl(var(--beige));
-  }
-
-  .border-gold {
-    border-color: hsl(var(--gold));
-  }
-}
-
-
-========== src/lib/utils.ts ==========
-
-import { clsx, type ClassValue } from "clsx";
-import { twMerge } from "tailwind-merge";
-
-export function cn(...inputs: ClassValue[]) {
-  return twMerge(clsx(inputs));
-}
-
-
-========== src/vite-env.d.ts ==========
-
-/// <reference types="vite/client" />
-
-
-========== src/hooks/use-mobile.tsx ==========
-
-import * as React from "react";
-
-const MOBILE_BREAKPOINT = 768;
-
-export function useIsMobile() {
-  const [isMobile, setIsMobile] = React.useState<boolean | undefined>(undefined);
-
-  React.useEffect(() => {
-    const mql = window.matchMedia(`(max-width: ${MOBILE_BREAKPOINT - 1}px)`);
-    const onChange = () => {
-      setIsMobile(window.innerWidth < MOBILE_BREAKPOINT);
-    };
-    mql.addEventListener("change", onChange);
-    setIsMobile(window.innerWidth < MOBILE_BREAKPOINT);
-    return () => mql.removeEventListener("change", onChange);
-  }, []);
-
-  return !!isMobile;
-}
-
-
-========== src/hooks/use-toast.ts ==========
-
-import * as React from "react";
-
-import type { ToastActionElement, ToastProps } from "@/components/ui/toast";
-
-const TOAST_LIMIT = 1;
-const TOAST_REMOVE_DELAY = 1000000;
-
-type ToasterToast = ToastProps & {
-  id: string;
-  title?: React.ReactNode;
-  description?: React.ReactNode;
-  action?: ToastActionElement;
-};
-
-const actionTypes = {
-  ADD_TOAST: "ADD_TOAST",
-  UPDATE_TOAST: "UPDATE_TOAST",
-  DISMISS_TOAST: "DISMISS_TOAST",
-  REMOVE_TOAST: "REMOVE_TOAST",
-} as const;
-
-let count = 0;
-
-function genId() {
-  count = (count + 1) % Number.MAX_SAFE_INTEGER;
-  return count.toString();
-}
-
-type ActionType = typeof actionTypes;
-
-type Action =
-  | {
-      type: ActionType["ADD_TOAST"];
-      toast: ToasterToast;
-    }
-  | {
-      type: ActionType["UPDATE_TOAST"];
-      toast: Partial<ToasterToast>;
-    }
-  | {
-      type: ActionType["DISMISS_TOAST"];
-      toastId?: ToasterToast["id"];
-    }
-  | {
-      type: ActionType["REMOVE_TOAST"];
-      toastId?: ToasterToast["id"];
-    };
-
-interface State {
-  toasts: ToasterToast[];
-}
-
-const toastTimeouts = new Map<string, ReturnType<typeof setTimeout>>();
-
-const addToRemoveQueue = (toastId: string) => {
-  if (toastTimeouts.has(toastId)) {
-    return;
-  }
-
-  const timeout = setTimeout(() => {
-    toastTimeouts.delete(toastId);
-    dispatch({
-      type: "REMOVE_TOAST",
-      toastId: toastId,
-    });
-  }, TOAST_REMOVE_DELAY);
-
-  toastTimeouts.set(toastId, timeout);
-};
-
-export const reducer = (state: State, action: Action): State => {
-  switch (action.type) {
-    case "ADD_TOAST":
-      return {
-        ...state,
-        toasts: [action.toast, ...state.toasts].slice(0, TOAST_LIMIT),
-      };
-
-    case "UPDATE_TOAST":
-      return {
-        ...state,
-        toasts: state.toasts.map((t) => (t.id === action.toast.id ? { ...t, ...action.toast } : t)),
-      };
-
-    case "DISMISS_TOAST": {
-      const { toastId } = action;
-
-      // ! Side effects ! - This could be extracted into a dismissToast() action,
-      // but I'll keep it here for simplicity
-      if (toastId) {
-        addToRemoveQueue(toastId);
-      } else {
-        state.toasts.forEach((toast) => {
-          addToRemoveQueue(toast.id);
-        });
-      }
-
-      return {
-        ...state,
-        toasts: state.toasts.map((t) =>
-          t.id === toastId || toastId === undefined
-            ? {
-                ...t,
-                open: false,
-              }
-            : t,
-        ),
-      };
-    }
-    case "REMOVE_TOAST":
-      if (action.toastId === undefined) {
-        return {
-          ...state,
-          toasts: [],
-        };
-      }
-      return {
-        ...state,
-        toasts: state.toasts.filter((t) => t.id !== action.toastId),
-      };
-  }
-};
-
-const listeners: Array<(state: State) => void> = [];
-
-let memoryState: State = { toasts: [] };
-
-function dispatch(action: Action) {
-  memoryState = reducer(memoryState, action);
-  listeners.forEach((listener) => {
-    listener(memoryState);
-  });
-}
-
-type Toast = Omit<ToasterToast, "id">;
-
-function toast({ ...props }: Toast) {
-  const id = genId();
-
-  const update = (props: ToasterToast) =>
-    dispatch({
-      type: "UPDATE_TOAST",
-      toast: { ...props, id },
-    });
-  const dismiss = () => dispatch({ type: "DISMISS_TOAST", toastId: id });
-
-  dispatch({
-    type: "ADD_TOAST",
-    toast: {
-      ...props,
-      id,
-      open: true,
-      onOpenChange: (open) => {
-        if (!open) dismiss();
-      },
-    },
-  });
-
-  return {
-    id: id,
-    dismiss,
-    update,
-  };
-}
-
-function useToast() {
-  const [state, setState] = React.useState<State>(memoryState);
-
-  React.useEffect(() => {
-    listeners.push(setState);
-    return () => {
-      const index = listeners.indexOf(setState);
-      if (index > -1) {
-        listeners.splice(index, 1);
-      }
-    };
-  }, [state]);
-
-  return {
-    ...state,
-    toast,
-    dismiss: (toastId?: string) => dispatch({ type: "DISMISS_TOAST", toastId }),
-  };
-}
-
-export { useToast, toast };
-
-
-========== src/components/HeroSection.tsx ==========
-
-import { Phone, Calendar } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
-import heroImage from "@/assets/hero-hair.jpg";
-
-const HeroSection = () => (
-  <section className="relative min-h-screen flex items-center pt-20">
-    <div className="absolute inset-0">
-      <img src={heroImage} alt="Perfektes Balayage Ergebnis bei HAIR CS Dortmund" className="w-full h-full object-cover" width={1280} height={1600} />
-      <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/65 to-transparent" />
-    </div>
-
-    <div className="container relative z-10 py-20">
-      <div className="max-w-2xl">
-        <div className="flex items-center gap-2 mb-6">
-          <div className="flex text-gold">
-            {[...Array(5)].map((_, i) => (
-              <span key={i}>★</span>
-            ))}
-          </div>
-          <span className="text-primary-foreground/80 text-sm">4,8 Sterne · 280+ zufriedene Kunden</span>
-        </div>
-
-        <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-medium leading-tight text-primary-foreground mb-6">
-          Balayage, Blond & Coloration – Ihr Spezialist in Dortmund
-        </h1>
-
-        <p className="text-lg text-primary-foreground/80 mb-10 max-w-lg leading-relaxed">
-          Seit über 10 Jahren vertrauen uns mehr als 280 Kunden in Dortmund. Für Farbe, Schnitt und Styling, das wirklich überzeugt.
-        </p>
-
-        <div className="flex flex-col sm:flex-row gap-4">
-          <Button asChild size="lg" className="bg-gold text-accent-foreground hover:bg-gold/90 text-base px-8 py-6">
-            <a href="tel:023128676166">
-              <Phone className="w-5 h-5 mr-2" />
-              Jetzt anrufen
-            </a>
-          </Button>
-          <Button asChild size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 text-base px-8 py-6">
-            <Link to="/kontakt">
-              <Calendar className="w-5 h-5 mr-2" />
-              Termin anfragen
-            </Link>
-          </Button>
-        </div>
-      </div>
-    </div>
-  </section>
-);
-
-export default HeroSection;
-
-
-========== src/components/TrustSection.tsx ==========
-
-import { Star, Users, Award, ShieldCheck } from "lucide-react";
-
-const stats = [
-  { icon: Star, label: "Google Bewertung", value: "4,8 ★" },
-  { icon: Users, label: "Zufriedene Kunden", value: "280+" },
-  { icon: Award, label: "Jahre in Dortmund", value: "10+" },
-  { icon: ShieldCheck, label: "Premium-Produkte", value: "Kérastase" },
-];
-
-const TrustSection = () => (
-  <section className="bg-card py-10 border-y border-border">
-    <div className="container">
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-        {stats.map(({ icon: Icon, label, value }) => (
-          <div key={label} className="flex flex-col items-center gap-1.5">
-            <Icon className="w-5 h-5 text-gold" />
-            <span className="font-serif text-xl md:text-2xl font-semibold text-foreground">{value}</span>
-            <span className="text-xs text-muted-foreground">{label}</span>
-          </div>
-        ))}
-      </div>
-    </div>
-  </section>
-);
-
-export default TrustSection;
-
-
-========== src/components/ServicesPreview.tsx ==========
-
-import { Scissors, Paintbrush, Sparkles, Wind, CircleDot } from "lucide-react";
-import { Link } from "react-router-dom";
-import { Button } from "@/components/ui/button";
-import { Phone } from "lucide-react";
-
-const services = [
-  { icon: Paintbrush, title: "Balayage", desc: "Natürliche, sonnengeküsste Farbverläufe, die monatelang perfekt nachwachsen – individuell auf Ihren Typ abgestimmt." },
-  { icon: Sparkles, title: "Blond & Coloration", desc: "Von Honigblond bis Platinblond: strahlende Farbergebnisse ohne Kompromisse bei der Haargesundheit." },
-  { icon: Scissors, title: "Haarschnitt", desc: "Präzise Schnitte, die Ihre Gesichtsform perfekt betonen – klassisch bis modern, für Damen und Herren." },
-  { icon: Wind, title: "Styling & Blow-out", desc: "Perfektes Styling, das den ganzen Tag hält – von natürlich bis glamourös für jeden Anlass." },
-  { icon: CircleDot, title: "Dauerwelle & Locken", desc: "Natürliches Volumen und Bewegung, die wochenlang halten – schonend und mit modernster Technik." },
-];
-
-const ServicesPreview = () => (
-  <section className="py-20 md:py-28">
-    <div className="container">
-      <div className="text-center mb-16">
-        <p className="text-gold text-sm font-medium tracking-widest uppercase mb-3">Unsere Leistungen</p>
-        <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground">
-          Worauf unsere Kunden in Dortmund vertrauen
-        </h2>
-      </div>
-
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {services.map(({ icon: Icon, title, desc }) => (
-          <div key={title} className="group p-8 rounded-lg border border-border bg-card hover:border-gold/50 transition-all duration-300">
-            <Icon className="w-8 h-8 text-gold mb-5" />
-            <h3 className="font-serif text-xl font-medium text-foreground mb-3">{title}</h3>
-            <p className="text-sm text-muted-foreground leading-relaxed">{desc}</p>
-          </div>
-        ))}
-      </div>
-
-      <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-12">
-        <Button asChild size="lg" className="bg-gold text-accent-foreground hover:bg-gold/90 text-base px-8 py-6">
-          <a href="tel:023128676166">
-            <Phone className="w-5 h-5 mr-2" />
-            Jetzt anrufen
-          </a>
-        </Button>
-        <Button asChild variant="outline" size="lg" className="border-gold text-gold hover:bg-gold hover:text-accent-foreground">
-          <Link to="/leistungen">Alle Leistungen ansehen</Link>
-        </Button>
-      </div>
-    </div>
-  </section>
-);
-
-export default ServicesPreview;
-
-
-========== src/components/WhyChooseUs.tsx ==========
-
-import { Target, Palette, Gem, HeartHandshake } from "lucide-react";
-import salonInterior from "@/assets/salon-interior.jpg";
-
-const reasons = [
-  { icon: Target, title: "Über 10 Jahre Erfahrung", desc: "Tausende zufriedene Kunden – vom einfachen Schnitt bis zur anspruchsvollen Coloration." },
-  { icon: Palette, title: "Blond- & Color-Spezialist", desc: "Unsere Kernkompetenz: perfektes Blond, Balayage und lebendige Farben, die halten." },
-  { icon: Gem, title: "Kérastase-Produkte", desc: "Wir arbeiten ausschließlich mit Kérastase – für gesundes, glänzendes Haar nach jedem Termin." },
-  { icon: HeartHandshake, title: "Persönlich & ehrlich", desc: "Ehrliche Beratung statt leerer Versprechen. Wir empfehlen nur, was wirklich zu Ihnen passt." },
-];
-
-const WhyChooseUs = () => (
-  <section className="py-20 md:py-28 bg-card">
-    <div className="container">
-      <div className="grid lg:grid-cols-2 gap-16 items-center">
-        <div>
-          <p className="text-gold text-sm font-medium tracking-widest uppercase mb-3">Warum HAIR CS?</p>
-          <h2 className="font-serif text-3xl md:text-4xl font-medium text-foreground mb-10">
-            Ihr Friseur in Dortmund –<br />seit über 10 Jahren
-          </h2>
-
-          <div className="space-y-8">
-            {reasons.map(({ icon: Icon, title, desc }) => (
-              <div key={title} className="flex gap-5">
-                <div className="shrink-0 w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center">
-                  <Icon className="w-5 h-5 text-gold" />
-                </div>
-                <div>
-                  <h3 className="font-serif text-lg font-medium text-foreground mb-1">{title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="relative">
-          <img
-            src={salonInterior}
-            alt="HAIR CS Dortmund Salon Interieur"
-            className="rounded-lg shadow-2xl w-full h-[500px] object-cover"
-            loading="lazy"
-            width={1920}
-            height={1080}
-          />
-          <div className="absolute -bottom-6 -left-6 bg-gold text-accent-foreground p-6 rounded-lg shadow-lg hidden md:block">
-            <p className="font-serif text-3xl font-semibold">4,8 ★</p>
-            <p className="text-sm">280+ Bewertungen</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-);
-
-export default WhyChooseUs;
-
-
-========== src/components/SalonImpression.tsx ==========
-
-import salonInterior from "@/assets/salon-interior.jpg";
-import salonColoring from "@/assets/salon-coloring.jpg";
-import stylingResult from "@/assets/styling-result.jpg";
-
-const SalonImpression = () => (
-  <section className="py-20 md:py-28 bg-card">
-    <div className="container">
-      <div className="text-center mb-16">
-        <p className="text-gold text-sm font-medium tracking-widest uppercase mb-3">Unser Salon</p>
-        <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground">
-          Einblick in unser Studio
-        </h2>
-      </div>
-
-      <div className="grid md:grid-cols-3 gap-4">
-        <div className="md:col-span-2 md:row-span-2">
-          <img src={salonInterior} alt="HAIR CS Salon Interieur" className="w-full h-full object-cover rounded-lg" loading="lazy" width={1920} height={1080} />
-        </div>
-        <div>
-          <img src={salonColoring} alt="Professionelle Coloration" className="w-full h-full object-cover rounded-lg" loading="lazy" width={1280} height={960} />
-        </div>
-        <div>
-          <img src={stylingResult} alt="Styling Ergebnis" className="w-full h-full object-cover rounded-lg" loading="lazy" width={800} height={1000} />
-        </div>
-      </div>
-    </div>
-  </section>
-);
-
-export default SalonImpression;
-
-
-========== src/components/Testimonials.tsx ==========
-
-import { Star } from "lucide-react";
-
-const reviews = [
-  { name: "Anna M.", text: "Ich bin seit 3 Jahren Stammkundin und lasse nur noch hier mein Blond machen. Kein Vergleich zu anderen Salons – das Team versteht Farbe wirklich.", rating: 5 },
-  { name: "Sarah K.", text: "Endlich ein Friseur, der wirklich zuhört! Mein Balayage sieht natürlich und gepflegt aus – sogar nach Wochen noch. Komme definitiv wieder.", rating: 5 },
-  { name: "Lisa T.", text: "Ehrliche Beratung, tolles Ergebnis. Ich wurde nicht zu etwas überredet, sondern perfekt beraten. Der beste Friseur in Dortmund!", rating: 5 },
-];
-
-const Testimonials = () => (
-  <section className="py-20 md:py-28">
-    <div className="container">
-      <div className="text-center mb-16">
-        <p className="text-gold text-sm font-medium tracking-widest uppercase mb-3">Kundenstimmen</p>
-        <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground">
-          Über 280 zufriedene Kunden – das sagen sie
-        </h2>
-      </div>
-
-      <div className="grid md:grid-cols-3 gap-8">
-        {reviews.map((review) => (
-          <div key={review.name} className="p-8 rounded-lg border border-border bg-card">
-            <div className="flex gap-1 text-gold mb-4">
-              {[...Array(review.rating)].map((_, i) => (
-                <Star key={i} className="w-4 h-4 fill-current" />
-              ))}
-            </div>
-            <p className="text-muted-foreground text-sm leading-relaxed mb-6 italic">„{review.text}"</p>
-            <p className="font-medium text-sm text-foreground">{review.name}</p>
-            <p className="text-xs text-muted-foreground mt-0.5">Google Bewertung</p>
-          </div>
-        ))}
-      </div>
-    </div>
-  </section>
-);
-
-export default Testimonials;
-
-
-========== src/components/FinalCTA.tsx ==========
-
-import { Phone, Calendar } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
-
-const FinalCTA = () => (
-  <section className="py-20 md:py-28 bg-primary">
-    <div className="container text-center">
-      <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-primary-foreground mb-4">
-        Vereinbaren Sie jetzt Ihren Termin
-      </h2>
-      <p className="text-primary-foreground/70 text-lg mb-2 max-w-lg mx-auto">
-        Rufen Sie uns an oder senden Sie eine Terminanfrage – wir freuen uns auf Sie.
-      </p>
-      <p className="text-gold text-sm font-medium mb-10">
-        Beliebte Termine sind schnell ausgebucht
-      </p>
-      <div className="flex flex-col sm:flex-row gap-4 justify-center">
-        <Button asChild size="lg" className="bg-gold text-accent-foreground hover:bg-gold/90 text-base px-8 py-6">
-          <a href="tel:023128676166">
-            <Phone className="w-5 h-5 mr-2" />
-            Jetzt anrufen
-          </a>
-        </Button>
-        <Button asChild size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 text-base px-8 py-6">
-          <Link to="/kontakt">
-            <Calendar className="w-5 h-5 mr-2" />
-            Termin anfragen
-          </Link>
-        </Button>
-      </div>
-    </div>
-  </section>
-);
-
-export default FinalCTA;
-
-
-========== src/components/FloatingCTA.tsx ==========
-
-import { Phone } from "lucide-react";
-
-const FloatingCTA = () => (
-  <a
-    href="tel:023128676166"
-    className="fixed bottom-6 right-6 z-50 md:hidden flex items-center gap-2 bg-gold text-accent-foreground px-5 py-3 rounded-full shadow-lg hover:bg-gold/90 transition-all font-medium text-sm"
-  >
-    <Phone className="w-5 h-5" />
-    Jetzt anrufen
-  </a>
-);
-
-export default FloatingCTA;
-
-
-========== src/components/Footer.tsx ==========
-
-import { Phone, MapPin, Clock } from "lucide-react";
-import { Link } from "react-router-dom";
-
-const Footer = () => (
-  <footer className="bg-primary text-primary-foreground">
-    <div className="container py-16">
-      <div className="grid md:grid-cols-3 gap-12">
-        <div>
-          <h3 className="font-serif text-2xl mb-4">HAIR <span className="text-gold">CS</span></h3>
-          <p className="text-primary-foreground/70 text-sm leading-relaxed">
-            Ihr Premium-Friseursalon in Dortmund. Spezialisiert auf perfekte Schnitte und professionelle Colorationen.
-          </p>
-        </div>
-
-        <div>
-          <h4 className="font-serif text-lg mb-4">Kontakt</h4>
-          <div className="space-y-3 text-sm text-primary-foreground/70">
-            <a href="tel:023128676166" className="flex items-center gap-2 hover:text-gold transition-colors">
-              <Phone className="w-4 h-4" /> 0231 28676166
-            </a>
-            <div className="flex items-center gap-2">
-              <MapPin className="w-4 h-4 shrink-0" /> Am Knappenberg 36, 44139 Dortmund
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <h4 className="font-serif text-lg mb-4">Öffnungszeiten</h4>
-          <div className="space-y-2 text-sm text-primary-foreground/70">
-            <div className="flex items-center gap-2">
-              <Clock className="w-4 h-4" />
-              <div>
-                <p>Mo – Fr: 9:00 – 18:00</p>
-                <p>Sa: 9:00 – 14:00</p>
-                <p>So: Geschlossen</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="border-t border-primary-foreground/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-        <p className="text-xs text-primary-foreground/50">© 2026 HAIR CS Dortmund. Alle Rechte vorbehalten.</p>
-        <div className="flex gap-6">
-          <Link to="/kontakt" className="text-xs text-primary-foreground/50 hover:text-gold transition-colors">Kontakt</Link>
-          <Link to="/leistungen" className="text-xs text-primary-foreground/50 hover:text-gold transition-colors">Leistungen</Link>
-        </div>
-      </div>
-    </div>
-  </footer>
-);
-
-export default Footer;
-
-
-========== src/components/Navbar.tsx ==========
-
-import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
-import { Phone, Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
-
-const navLinks = [
-  { label: "Home", to: "/" },
-  { label: "Leistungen", to: "/leistungen" },
-  { label: "Über uns", to: "/ueber-uns" },
-  { label: "Kontakt", to: "/kontakt" },
-];
-
-const Navbar = () => {
-  const [open, setOpen] = useState(false);
-  const location = useLocation();
-
-  return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
-      <div className="container flex items-center justify-between h-16 md:h-20">
-        <Link to="/" className="font-serif text-2xl md:text-3xl font-semibold tracking-wide text-foreground">
-          HAIR <span className="text-gold">CS</span>
-        </Link>
-
-        <nav className="hidden md:flex items-center gap-8">
-          {navLinks.map((link) => (
-            <Link
-              key={link.to}
-              to={link.to}
-              className={`text-sm font-medium tracking-wide uppercase transition-colors hover:text-gold ${
-                location.pathname === link.to ? "text-gold" : "text-muted-foreground"
-              }`}
-            >
-              {link.label}
-            </Link>
-          ))}
-        </nav>
-
-        <div className="hidden md:flex items-center gap-3">
-          <Button asChild variant="outline" size="sm" className="border-gold text-gold hover:bg-gold hover:text-accent-foreground">
-            <a href="tel:023128676166">
-              <Phone className="w-4 h-4 mr-2" />
-              Jetzt anrufen
-            </a>
-          </Button>
-        </div>
-
-        <button onClick={() => setOpen(!open)} className="md:hidden text-foreground">
-          {open ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-        </button>
-      </div>
-
-      {open && (
-        <div className="md:hidden bg-background border-b border-border">
-          <nav className="container py-4 flex flex-col gap-4">
-            {navLinks.map((link) => (
-              <Link
-                key={link.to}
-                to={link.to}
-                onClick={() => setOpen(false)}
-                className={`text-sm font-medium tracking-wide uppercase ${
-                  location.pathname === link.to ? "text-gold" : "text-muted-foreground"
-                }`}
-              >
-                {link.label}
-              </Link>
-            ))}
-            <Button asChild className="bg-gold text-accent-foreground hover:bg-gold/90 w-full">
-              <a href="tel:023128676166">
-                <Phone className="w-4 h-4 mr-2" />
-                Jetzt anrufen
-              </a>
-            </Button>
-          </nav>
-        </div>
-      )}
-    </header>
-  );
-};
-
-export default Navbar;
-
-
-========== src/components/NavLink.tsx ==========
-
-import { NavLink as RouterNavLink, NavLinkProps } from "react-router-dom";
-import { forwardRef } from "react";
-import { cn } from "@/lib/utils";
-
-interface NavLinkCompatProps extends Omit<NavLinkProps, "className"> {
-  className?: string;
-  activeClassName?: string;
-  pendingClassName?: string;
-}
-
-const NavLink = forwardRef<HTMLAnchorElement, NavLinkCompatProps>(
-  ({ className, activeClassName, pendingClassName, to, ...props }, ref) => {
-    return (
-      <RouterNavLink
-        ref={ref}
-        to={to}
-        className={({ isActive, isPending }) =>
-          cn(className, isActive && activeClassName, isPending && pendingClassName)
-        }
-        {...props}
-      />
-    );
-  },
-);
-
-NavLink.displayName = "NavLink";
-
-export { NavLink };
-
-
-========== src/pages/Index.tsx ==========
-
-import HeroSection from "@/components/HeroSection";
-import TrustSection from "@/components/TrustSection";
-import ServicesPreview from "@/components/ServicesPreview";
-import WhyChooseUs from "@/components/WhyChooseUs";
-import SalonImpression from "@/components/SalonImpression";
-import Testimonials from "@/components/Testimonials";
-import FinalCTA from "@/components/FinalCTA";
-
-const Index = () => (
-  <>
-    <HeroSection />
-    <TrustSection />
-    <ServicesPreview />
-    <WhyChooseUs />
-    <SalonImpression />
-    <Testimonials />
-    <FinalCTA />
-  </>
-);
-
-export default Index;
-
-
-========== src/pages/Services.tsx ==========
-
-import { Scissors, Paintbrush, Sparkles, Wind, CircleDot, Phone } from "lucide-react";
-import { Button } from "@/components/ui/button";
-
-const services = [
-  {
-    icon: Paintbrush,
-    title: "Balayage",
-    desc: "Natürliche, sonnengeküsste Farbverläufe, die monatelang perfekt nachwachsen – ohne harten Ansatz.",
-    forWhom: "Für alle, die einen pflegeleichten Look wollen, der immer gut aussieht.",
-    benefits: ["Natürlicher Farbverlauf ohne harten Ansatz", "Weniger Nachfärbe-Termine nötig", "Individuell auf Ihren Hautton abgestimmt"],
-  },
-  {
-    icon: Sparkles,
-    title: "Blond & Coloration",
-    desc: "Von warmem Honigblond bis kühlem Platinblond – strahlend, gepflegt und ohne Kompromisse bei der Haargesundheit.",
-    forWhom: "Für alle, die endlich ihr perfektes Blond finden wollen.",
-    benefits: ["Schonende Aufhellung mit Kérastase", "Kein Stroh-Effekt, sondern Glanz", "Langanhaltende Farbbrillanz"],
-  },
-  {
-    icon: Scissors,
-    title: "Haarschnitt Damen & Herren",
-    desc: "Präzise Schnitte, die Ihre Gesichtsform perfekt betonen – vom klassischen Bob bis zum modernen Fade.",
-    forWhom: "Für Damen und Herren, die einen Schnitt wollen, der auch nach Wochen noch sitzt.",
-    benefits: ["Individuelle Typberatung vor dem Schnitt", "Präzise Schnittführung für langanhaltende Form", "Styling-Tipps für den Alltag"],
-  },
-  {
-    icon: Wind,
-    title: "Styling & Blow-out",
-    desc: "Perfektes Finish, das den ganzen Tag hält – von natürlich-lässig bis elegant für besondere Anlässe.",
-    forWhom: "Für alle, die für ein Event oder im Alltag perfekt gestylt sein möchten.",
-    benefits: ["Hochzeits- & Event-Styling", "Volumen und Glanz den ganzen Tag", "Hält auch bei Wind und Wetter"],
-  },
-  {
-    icon: CircleDot,
-    title: "Dauerwelle & Locken",
-    desc: "Natürliches Volumen und Bewegung, die wochenlang halten – schonend und mit modernster Technik.",
-    forWhom: "Für alle, die sich jeden Morgen weniger Stylingaufwand wünschen.",
-    benefits: ["Schonende Formgebung ohne Haarschäden", "Natürlich aussehende Locken", "Weniger täglicher Stylingaufwand"],
-  },
-];
-
-const Services = () => (
-  <main className="pt-20">
-    <section className="py-20 md:py-28">
-      <div className="container">
-        <div className="text-center mb-16">
-          <p className="text-gold text-sm font-medium tracking-widest uppercase mb-3">Leistungen</p>
-          <h1 className="font-serif text-4xl md:text-5xl font-medium text-foreground mb-4">
-            Unsere Expertise für Ihr Haar
-          </h1>
-          <p className="text-muted-foreground max-w-xl mx-auto">
-            Spezialisiert auf Balayage, Blond und Coloration – mit über 10 Jahren Erfahrung in Dortmund.
-          </p>
-        </div>
-
-        <div className="space-y-12">
-          {services.map(({ icon: Icon, title, desc, forWhom, benefits }) => (
-            <div key={title} className="grid md:grid-cols-2 gap-8 items-start p-8 md:p-12 rounded-lg border border-border bg-card">
-              <div>
-                <div className="flex items-center gap-3 mb-4">
-                  <Icon className="w-7 h-7 text-gold" />
-                  <h2 className="font-serif text-2xl md:text-3xl font-medium text-foreground">{title}</h2>
-                </div>
-                <p className="text-muted-foreground leading-relaxed mb-4">{desc}</p>
-                <p className="text-sm text-gold font-medium">{forWhom}</p>
-              </div>
-              <div>
-                <h3 className="font-serif text-lg font-medium text-foreground mb-4">Ihre Vorteile</h3>
-                <ul className="space-y-3">
-                  {benefits.map((b) => (
-                    <li key={b} className="flex items-center gap-3 text-sm text-muted-foreground">
-                      <span className="w-1.5 h-1.5 rounded-full bg-gold shrink-0" />
-                      {b}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        <div className="text-center mt-16">
-          <p className="text-muted-foreground mb-6">Bereit für Ihren neuen Look?</p>
-          <Button asChild size="lg" className="bg-gold text-accent-foreground hover:bg-gold/90 text-base px-8 py-6">
-            <a href="tel:023128676166">
-              <Phone className="w-5 h-5 mr-2" />
-              Jetzt Termin vereinbaren
-            </a>
-          </Button>
-        </div>
-      </div>
-    </section>
-  </main>
-);
-
-export default Services;
-
-
-========== src/pages/About.tsx ==========
-
-import salonInterior from "@/assets/salon-interior.jpg";
-import salonColoring from "@/assets/salon-coloring.jpg";
-import { Phone } from "lucide-react";
-import { Button } from "@/components/ui/button";
-
-const About = () => (
-  <main className="pt-20">
-    <section className="py-20 md:py-28">
-      <div className="container">
-        <div className="text-center mb-16">
-          <p className="text-gold text-sm font-medium tracking-widest uppercase mb-3">Über uns</p>
-          <h1 className="font-serif text-4xl md:text-5xl font-medium text-foreground mb-4">
-            Ihr Friseur in Dortmund
-          </h1>
-        </div>
-
-        <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
-          <div>
-            <h2 className="font-serif text-2xl md:text-3xl font-medium text-foreground mb-6">
-              Leidenschaft für perfektes Haar
-            </h2>
-            <div className="space-y-4 text-muted-foreground leading-relaxed">
-              <p>
-                Bei HAIR CS Dortmund verbinden wir handwerkliche Präzision mit einem modernen Stilgefühl.
-                Unser Team besteht aus erfahrenen Stylisten, die sich regelmäßig weiterbilden, um Ihnen
-                die neuesten Trends und Techniken bieten zu können.
-              </p>
-              <p>
-                Unsere Spezialisierung auf Blond- und Colorationstechniken macht uns zum gefragten
-                Ansprechpartner in Dortmund. Wir arbeiten ausschließlich mit hochwertigen Produkten wie
-                Kérastase, um Ihrem Haar die bestmögliche Pflege zu garantieren.
-              </p>
-              <p>
-                Mit über 280 positiven Google-Bewertungen und einer Durchschnittsbewertung von 4,8 Sternen
-                sind wir stolz auf das Vertrauen, das unsere Kunden uns schenken.
-              </p>
-            </div>
-            <Button asChild size="lg" className="bg-gold text-accent-foreground hover:bg-gold/90 mt-8">
-              <a href="tel:023128676166">
-                <Phone className="w-5 h-5 mr-2" />
-                Jetzt anrufen
-              </a>
-            </Button>
-          </div>
-          <img
-            src={salonColoring}
-            alt="Stylist bei der Arbeit"
-            className="rounded-lg shadow-xl w-full h-[450px] object-cover"
-            loading="lazy"
-            width={1280}
-            height={960}
-          />
-        </div>
-
-        <div className="relative rounded-lg overflow-hidden">
-          <img src={salonInterior} alt="HAIR CS Salon" className="w-full h-[400px] object-cover" loading="lazy" width={1920} height={1080} />
-          <div className="absolute inset-0 bg-primary/60 flex items-center justify-center">
-            <div className="text-center">
-              <p className="font-serif text-4xl md:text-5xl font-semibold text-primary-foreground mb-2">4,8 ★</p>
-              <p className="text-primary-foreground/80 text-lg">Über 280 zufriedene Kunden</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-);
-
-export default About;
-
-
-========== src/pages/Contact.tsx ==========
-
-import { Phone, MapPin, Clock } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { useState } from "react";
-import { toast } from "sonner";
-
-const Contact = () => {
-  const [formData, setFormData] = useState({ name: "", phone: "", service: "", message: "" });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    toast.success("Vielen Dank! Wir melden uns in Kürze bei Ihnen.");
-    setFormData({ name: "", phone: "", service: "", message: "" });
-  };
-
-  return (
-    <main className="pt-20">
-      <section className="py-20 md:py-28">
-        <div className="container">
-          <div className="text-center mb-16">
-            <p className="text-gold text-sm font-medium tracking-widest uppercase mb-3">Kontakt</p>
-            <h1 className="font-serif text-4xl md:text-5xl font-medium text-foreground mb-4">
-              Wir freuen uns auf Sie
-            </h1>
-          </div>
-
-          <div className="grid lg:grid-cols-2 gap-16">
-            <div>
-              <div className="space-y-8 mb-12">
-                <a href="tel:023128676166" className="flex items-start gap-4 group">
-                  <div className="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center shrink-0">
-                    <Phone className="w-5 h-5 text-gold" />
-                  </div>
-                  <div>
-                    <h3 className="font-serif text-lg font-medium text-foreground mb-1">Telefon</h3>
-                    <p className="text-gold font-medium group-hover:underline">0231 28676166</p>
-                  </div>
-                </a>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center shrink-0">
-                    <MapPin className="w-5 h-5 text-gold" />
-                  </div>
-                  <div>
-                    <h3 className="font-serif text-lg font-medium text-foreground mb-1">Adresse</h3>
-                    <p className="text-muted-foreground">Am Knappenberg 36<br />44139 Dortmund</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center shrink-0">
-                    <Clock className="w-5 h-5 text-gold" />
-                  </div>
-                  <div>
-                    <h3 className="font-serif text-lg font-medium text-foreground mb-1">Öffnungszeiten</h3>
-                    <p className="text-muted-foreground text-sm">
-                      Mo – Fr: 9:00 – 18:00<br />
-                      Sa: 9:00 – 14:00<br />
-                      So: Geschlossen
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="rounded-lg overflow-hidden h-[300px]">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.5!2d7.4653!3d51.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDMwJzAwLjAiTiA3wrAyNycnRS0!5e0!3m2!1sde!2sde!4v1"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="HAIR CS Dortmund Standort"
-                />
-              </div>
-            </div>
-
-            <div>
-              <div className="p-8 md:p-10 rounded-lg border border-border bg-card">
-                <h2 className="font-serif text-2xl font-medium text-foreground mb-6">Termin anfragen</h2>
-                <form onSubmit={handleSubmit} className="space-y-5">
-                  <div>
-                    <label className="text-sm font-medium text-foreground mb-1.5 block">Name</label>
-                    <Input
-                      value={formData.name}
-                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      placeholder="Ihr Name"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label className="text-sm font-medium text-foreground mb-1.5 block">Telefon</label>
-                    <Input
-                      value={formData.phone}
-                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      placeholder="Ihre Telefonnummer"
-                      type="tel"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label className="text-sm font-medium text-foreground mb-1.5 block">Service</label>
-                    <Select value={formData.service} onValueChange={(v) => setFormData({ ...formData, service: v })}>
-                      <SelectTrigger>
-                        <SelectValue placeholder="Service auswählen" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="balayage">Balayage</SelectItem>
-                        <SelectItem value="coloration">Blond & Coloration</SelectItem>
-                        <SelectItem value="schnitt">Haarschnitt</SelectItem>
-                        <SelectItem value="styling">Styling & Blow-out</SelectItem>
-                        <SelectItem value="dauerwelle">Dauerwelle & Locken</SelectItem>
-                        <SelectItem value="sonstiges">Sonstiges</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </div>
-                  <div>
-                    <label className="text-sm font-medium text-foreground mb-1.5 block">Nachricht</label>
-                    <Textarea
-                      value={formData.message}
-                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      placeholder="Ihre Nachricht (optional)"
-                      rows={4}
-                    />
-                  </div>
-                  <Button type="submit" size="lg" className="w-full bg-gold text-accent-foreground hover:bg-gold/90">
-                    Anfrage senden
-                  </Button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-  );
-};
-
-export default Contact;
-
-
-========== src/pages/NotFound.tsx ==========
-
-import { useLocation } from "react-router-dom";
-import { useEffect } from "react";
-
-const NotFound = () => {
-  const location = useLocation();
-
-  useEffect(() => {
-    console.error("404 Error: User attempted to access non-existent route:", location.pathname);
-  }, [location.pathname]);
-
-  return (
-    <div className="flex min-h-screen items-center justify-center bg-muted">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">404</h1>
-        <p className="mb-4 text-xl text-muted-foreground">Oops! Page not found</p>
-        <a href="/" className="text-primary underline hover:text-primary/90">
-          Return to Home
-        </a>
-      </div>
-    </div>
-  );
-};
-
-export default NotFound;
+</script>
+</body>
+</html>
